@@ -1,0 +1,267 @@
+[
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012380"
+    },
+    "forecast_date": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "service": "ALL",
+    "horizon_days": 30,
+    "model_used": "prophet",
+    "predictions": [
+      {
+        "ds": {
+          "$date": "2026-03-26T00:00:00Z"
+        },
+        "yhat": 115.92,
+        "yhat_lower": 102.01,
+        "yhat_upper": 129.83
+      },
+      {
+        "ds": {
+          "$date": "2026-03-27T00:00:00Z"
+        },
+        "yhat": 116.85,
+        "yhat_lower": 102.83,
+        "yhat_upper": 130.87
+      },
+      {
+        "ds": {
+          "$date": "2026-03-28T00:00:00Z"
+        },
+        "yhat": 100.11,
+        "yhat_lower": 88.1,
+        "yhat_upper": 112.12
+      },
+      {
+        "ds": {
+          "$date": "2026-03-29T00:00:00Z"
+        },
+        "yhat": 100.9,
+        "yhat_lower": 88.79,
+        "yhat_upper": 113.01
+      },
+      {
+        "ds": {
+          "$date": "2026-03-30T00:00:00Z"
+        },
+        "yhat": 119.63,
+        "yhat_lower": 105.27,
+        "yhat_upper": 133.99
+      },
+      {
+        "ds": {
+          "$date": "2026-03-31T00:00:00Z"
+        },
+        "yhat": 120.56,
+        "yhat_lower": 106.09,
+        "yhat_upper": 135.03
+      },
+      {
+        "ds": {
+          "$date": "2026-04-01T00:00:00Z"
+        },
+        "yhat": 121.48,
+        "yhat_lower": 106.9,
+        "yhat_upper": 136.06
+      },
+      {
+        "ds": {
+          "$date": "2026-04-02T00:00:00Z"
+        },
+        "yhat": 122.41,
+        "yhat_lower": 107.72,
+        "yhat_upper": 137.1
+      },
+      {
+        "ds": {
+          "$date": "2026-04-03T00:00:00Z"
+        },
+        "yhat": 123.34,
+        "yhat_lower": 108.54,
+        "yhat_upper": 138.14
+      },
+      {
+        "ds": {
+          "$date": "2026-04-04T00:00:00Z"
+        },
+        "yhat": 105.63,
+        "yhat_lower": 92.95,
+        "yhat_upper": 118.31
+      },
+      {
+        "ds": {
+          "$date": "2026-04-05T00:00:00Z"
+        },
+        "yhat": 106.41,
+        "yhat_lower": 93.64,
+        "yhat_upper": 119.18
+      },
+      {
+        "ds": {
+          "$date": "2026-04-06T00:00:00Z"
+        },
+        "yhat": 126.12,
+        "yhat_lower": 110.99,
+        "yhat_upper": 141.25
+      },
+      {
+        "ds": {
+          "$date": "2026-04-07T00:00:00Z"
+        },
+        "yhat": 127.05,
+        "yhat_lower": 111.8,
+        "yhat_upper": 142.3
+      },
+      {
+        "ds": {
+          "$date": "2026-04-08T00:00:00Z"
+        },
+        "yhat": 127.98,
+        "yhat_lower": 112.62,
+        "yhat_upper": 143.34
+      },
+      {
+        "ds": {
+          "$date": "2026-04-09T00:00:00Z"
+        },
+        "yhat": 128.9,
+        "yhat_lower": 113.43,
+        "yhat_upper": 144.37
+      },
+      {
+        "ds": {
+          "$date": "2026-04-10T00:00:00Z"
+        },
+        "yhat": 129.83,
+        "yhat_lower": 114.25,
+        "yhat_upper": 145.41
+      },
+      {
+        "ds": {
+          "$date": "2026-04-11T00:00:00Z"
+        },
+        "yhat": 111.14,
+        "yhat_lower": 97.8,
+        "yhat_upper": 124.48
+      },
+      {
+        "ds": {
+          "$date": "2026-04-12T00:00:00Z"
+        },
+        "yhat": 111.93,
+        "yhat_lower": 98.5,
+        "yhat_upper": 125.36
+      },
+      {
+        "ds": {
+          "$date": "2026-04-13T00:00:00Z"
+        },
+        "yhat": 132.61,
+        "yhat_lower": 116.7,
+        "yhat_upper": 148.52
+      },
+      {
+        "ds": {
+          "$date": "2026-04-14T00:00:00Z"
+        },
+        "yhat": 133.54,
+        "yhat_lower": 117.52,
+        "yhat_upper": 149.56
+      },
+      {
+        "ds": {
+          "$date": "2026-04-15T00:00:00Z"
+        },
+        "yhat": 134.47,
+        "yhat_lower": 118.33,
+        "yhat_upper": 150.61
+      },
+      {
+        "ds": {
+          "$date": "2026-04-16T00:00:00Z"
+        },
+        "yhat": 135.39,
+        "yhat_lower": 119.14,
+        "yhat_upper": 151.64
+      },
+      {
+        "ds": {
+          "$date": "2026-04-17T00:00:00Z"
+        },
+        "yhat": 136.32,
+        "yhat_lower": 119.96,
+        "yhat_upper": 152.68
+      },
+      {
+        "ds": {
+          "$date": "2026-04-18T00:00:00Z"
+        },
+        "yhat": 116.66,
+        "yhat_lower": 102.66,
+        "yhat_upper": 130.66
+      },
+      {
+        "ds": {
+          "$date": "2026-04-19T00:00:00Z"
+        },
+        "yhat": 117.45,
+        "yhat_lower": 103.36,
+        "yhat_upper": 131.54
+      },
+      {
+        "ds": {
+          "$date": "2026-04-20T00:00:00Z"
+        },
+        "yhat": 139.1,
+        "yhat_lower": 122.41,
+        "yhat_upper": 155.79
+      },
+      {
+        "ds": {
+          "$date": "2026-04-21T00:00:00Z"
+        },
+        "yhat": 140.03,
+        "yhat_lower": 123.23,
+        "yhat_upper": 156.83
+      },
+      {
+        "ds": {
+          "$date": "2026-04-22T00:00:00Z"
+        },
+        "yhat": 140.96,
+        "yhat_lower": 124.04,
+        "yhat_upper": 157.88
+      },
+      {
+        "ds": {
+          "$date": "2026-04-23T00:00:00Z"
+        },
+        "yhat": 141.89,
+        "yhat_lower": 124.86,
+        "yhat_upper": 158.92
+      },
+      {
+        "ds": {
+          "$date": "2026-04-24T00:00:00Z"
+        },
+        "yhat": 142.81,
+        "yhat_lower": 125.67,
+        "yhat_upper": 159.95
+      },
+      {
+        "ds": {
+          "$date": "2026-04-25T00:00:00Z"
+        },
+        "yhat": 122.18,
+        "yhat_lower": 107.52,
+        "yhat_upper": 136.84
+      }
+    ],
+    "mape": 4.82,
+    "created_at": {
+      "$date": "2026-03-26T12:00:00Z"
+    }
+  }
+]

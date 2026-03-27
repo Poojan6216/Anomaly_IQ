@@ -1,0 +1,90 @@
+[
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012350"
+    },
+    "budget_type": "monthly",
+    "name": "Total AWS Monthly Budget",
+    "limit": 5000.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": null,
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012351"
+    },
+    "budget_type": "monthly",
+    "name": "EC2 Compute Budget",
+    "limit": 2200.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": "Amazon EC2",
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012352"
+    },
+    "budget_type": "monthly",
+    "name": "RDS Database Budget",
+    "limit": 800.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": "Amazon RDS",
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012353"
+    },
+    "budget_type": "daily",
+    "name": "Lambda Daily Budget",
+    "limit": 50.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": "AWS Lambda",
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  }
+]

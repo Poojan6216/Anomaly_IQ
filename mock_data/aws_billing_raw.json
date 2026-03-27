@@ -1,0 +1,9193 @@
+[
+  {
+    "timestamp": {
+      "$date": "2026-02-25T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 62.0077,
+    "usage_quantity": 19.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-25T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-25T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 21.2641,
+    "usage_quantity": 17.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-25T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-25T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.0817,
+    "usage_quantity": 18.16,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-25T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-25T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.7217,
+    "usage_quantity": 17.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-25T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-25T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.3405,
+    "usage_quantity": 20.29,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-25T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-25T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.253,
+    "usage_quantity": 20.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-25T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-25T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.4137,
+    "usage_quantity": 21.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-25T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-25T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.7297,
+    "usage_quantity": 17.3,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-25T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-26T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 58.8757,
+    "usage_quantity": 18.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-26T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-26T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 21.2916,
+    "usage_quantity": 17.03,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-26T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-26T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 8.9517,
+    "usage_quantity": 17.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-26T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-26T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.2093,
+    "usage_quantity": 19.22,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-26T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-26T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.3182,
+    "usage_quantity": 17.02,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-26T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-26T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 3.7851,
+    "usage_quantity": 17.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-26T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-26T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.2322,
+    "usage_quantity": 19.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-26T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-26T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.9407,
+    "usage_quantity": 19.41,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-26T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-27T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 55.9743,
+    "usage_quantity": 17.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-27T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-27T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 24.5142,
+    "usage_quantity": 19.61,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-27T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-27T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 10.3129,
+    "usage_quantity": 20.63,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-27T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-27T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.3472,
+    "usage_quantity": 16.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-27T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-27T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.4404,
+    "usage_quantity": 20.61,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-27T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-27T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.274,
+    "usage_quantity": 20.11,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-27T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-27T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.0004,
+    "usage_quantity": 18.46,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-27T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-27T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.7612,
+    "usage_quantity": 17.61,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-27T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-28T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 66.5839,
+    "usage_quantity": 21.31,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-28T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-28T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 23.0588,
+    "usage_quantity": 18.45,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-28T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-28T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 8.6617,
+    "usage_quantity": 17.32,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-28T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-28T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.5031,
+    "usage_quantity": 17.34,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-28T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-28T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.5004,
+    "usage_quantity": 20.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-28T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-28T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.1816,
+    "usage_quantity": 19.68,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-28T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-28T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.35,
+    "usage_quantity": 20.62,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-28T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-02-28T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 2.0259,
+    "usage_quantity": 20.26,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-02-28T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-01T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 60.5217,
+    "usage_quantity": 19.37,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-01T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-01T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 26.7251,
+    "usage_quantity": 21.38,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-01T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-01T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.3201,
+    "usage_quantity": 18.64,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-01T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-01T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.2899,
+    "usage_quantity": 19.44,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-01T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-01T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.4743,
+    "usage_quantity": 20.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-01T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-01T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.1961,
+    "usage_quantity": 19.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-01T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-01T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.3908,
+    "usage_quantity": 20.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-01T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-01T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.9556,
+    "usage_quantity": 19.56,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-01T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-02T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 62.9458,
+    "usage_quantity": 20.14,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-02T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-02T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 21.3839,
+    "usage_quantity": 17.11,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-02T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-02T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 8.9731,
+    "usage_quantity": 17.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-02T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-02T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.8361,
+    "usage_quantity": 18.23,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-02T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-02T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.3949,
+    "usage_quantity": 17.26,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-02T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-02T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 3.8183,
+    "usage_quantity": 17.97,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-02T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-02T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 2.8212,
+    "usage_quantity": 17.36,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-02T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-02T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.8177,
+    "usage_quantity": 18.18,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-02T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-03T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 61.9539,
+    "usage_quantity": 19.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-03T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-03T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 23.2214,
+    "usage_quantity": 18.58,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-03T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-03T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.3009,
+    "usage_quantity": 18.6,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-03T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-03T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.698,
+    "usage_quantity": 17.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-03T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-03T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.6644,
+    "usage_quantity": 18.13,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-03T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-03T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.5076,
+    "usage_quantity": 21.21,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-03T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-03T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.2308,
+    "usage_quantity": 19.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-03T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-03T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.9703,
+    "usage_quantity": 19.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-03T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-04T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 55.2644,
+    "usage_quantity": 17.68,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-04T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-04T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 25.3198,
+    "usage_quantity": 20.26,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-04T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-04T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 8.8245,
+    "usage_quantity": 17.65,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-04T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-04T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.9917,
+    "usage_quantity": 18.64,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-04T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-04T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.7049,
+    "usage_quantity": 21.46,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-04T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-04T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.2171,
+    "usage_quantity": 19.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-04T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-04T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.1626,
+    "usage_quantity": 19.46,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-04T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-04T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 2.0051,
+    "usage_quantity": 20.05,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-04T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-05T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 64.9371,
+    "usage_quantity": 20.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-05T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-05T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 25.5898,
+    "usage_quantity": 20.47,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-05T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-05T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 8.9757,
+    "usage_quantity": 17.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-05T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-05T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.3915,
+    "usage_quantity": 17.04,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-05T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-05T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.7343,
+    "usage_quantity": 18.35,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-05T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-05T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 3.8526,
+    "usage_quantity": 18.13,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-05T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-05T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 2.9036,
+    "usage_quantity": 17.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-05T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-05T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 2.1241,
+    "usage_quantity": 21.24,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-05T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-06T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 65.4197,
+    "usage_quantity": 20.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-06T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-06T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 22.9325,
+    "usage_quantity": 18.35,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-06T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-06T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.9581,
+    "usage_quantity": 19.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-06T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-06T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.0197,
+    "usage_quantity": 18.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-06T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-06T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.5969,
+    "usage_quantity": 21.11,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-06T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-06T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.0397,
+    "usage_quantity": 19.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-06T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-06T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 2.9439,
+    "usage_quantity": 18.12,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-06T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-06T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.8032,
+    "usage_quantity": 18.03,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-06T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-07T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 60.8837,
+    "usage_quantity": 19.48,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-07T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-07T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 22.6334,
+    "usage_quantity": 18.11,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-07T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-07T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.7949,
+    "usage_quantity": 19.59,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-07T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-07T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.8874,
+    "usage_quantity": 21.03,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-07T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-07T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.8551,
+    "usage_quantity": 18.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-07T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-07T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 3.8052,
+    "usage_quantity": 17.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-07T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-07T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.4926,
+    "usage_quantity": 21.49,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-07T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-07T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.9244,
+    "usage_quantity": 19.24,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-07T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-08T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 54.1091,
+    "usage_quantity": 17.31,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-08T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-08T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 21.3914,
+    "usage_quantity": 17.11,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-08T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-08T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 8.7006,
+    "usage_quantity": 17.4,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-08T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-08T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.4202,
+    "usage_quantity": 19.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-08T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-08T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.4206,
+    "usage_quantity": 20.55,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-08T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-08T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.0038,
+    "usage_quantity": 18.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-08T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-08T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 2.7932,
+    "usage_quantity": 17.19,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-08T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-08T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.8655,
+    "usage_quantity": 18.65,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-08T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-09T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 67.1441,
+    "usage_quantity": 21.49,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-09T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-09T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 24.1677,
+    "usage_quantity": 19.33,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-09T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-09T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 10.6854,
+    "usage_quantity": 21.37,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-09T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-09T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.8234,
+    "usage_quantity": 20.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-09T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-09T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.2965,
+    "usage_quantity": 16.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-09T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-09T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.2961,
+    "usage_quantity": 20.22,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-09T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-09T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.2561,
+    "usage_quantity": 20.04,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-09T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-09T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.937,
+    "usage_quantity": 19.37,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-09T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-10T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 56.6423,
+    "usage_quantity": 18.13,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-10T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-10T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 24.8119,
+    "usage_quantity": 19.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-10T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-10T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 8.705,
+    "usage_quantity": 17.41,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-10T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-10T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.0873,
+    "usage_quantity": 18.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-10T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-10T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.9334,
+    "usage_quantity": 18.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-10T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-10T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.5244,
+    "usage_quantity": 21.29,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-10T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-10T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.4014,
+    "usage_quantity": 20.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-10T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-10T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.811,
+    "usage_quantity": 18.11,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-10T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-11T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 60.0084,
+    "usage_quantity": 19.2,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-11T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-11T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 22.149,
+    "usage_quantity": 17.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-11T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-11T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 10.5507,
+    "usage_quantity": 21.1,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-11T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-11T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.8403,
+    "usage_quantity": 20.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-11T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-11T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.7098,
+    "usage_quantity": 18.27,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-11T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-11T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.2161,
+    "usage_quantity": 19.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-11T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-11T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.2016,
+    "usage_quantity": 19.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-11T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-11T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.76,
+    "usage_quantity": 17.6,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-11T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-12T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 63.7802,
+    "usage_quantity": 20.41,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-12T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-12T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 24.2268,
+    "usage_quantity": 19.38,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-12T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-12T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 10.242,
+    "usage_quantity": 20.48,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-12T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-12T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.2525,
+    "usage_quantity": 19.34,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-12T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-12T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.2808,
+    "usage_quantity": 16.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-12T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-12T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 3.9078,
+    "usage_quantity": 18.39,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-12T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-12T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 2.7602,
+    "usage_quantity": 16.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-12T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-12T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 2.1177,
+    "usage_quantity": 21.18,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-12T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-13T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 65.4536,
+    "usage_quantity": 20.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-13T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-13T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 25.9104,
+    "usage_quantity": 20.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-13T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-13T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.1565,
+    "usage_quantity": 18.31,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-13T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-13T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.4361,
+    "usage_quantity": 17.16,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-13T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-13T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.5443,
+    "usage_quantity": 20.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-13T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-13T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.5177,
+    "usage_quantity": 21.26,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-13T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-13T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 2.8097,
+    "usage_quantity": 17.29,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-13T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-13T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.9135,
+    "usage_quantity": 19.14,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-13T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-14T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 53.7967,
+    "usage_quantity": 17.21,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-14T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-14T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 25.5011,
+    "usage_quantity": 20.4,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-14T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-14T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 10.2125,
+    "usage_quantity": 20.43,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-14T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-14T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.5579,
+    "usage_quantity": 17.49,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-14T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-14T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.9644,
+    "usage_quantity": 19.09,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-14T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-14T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.1288,
+    "usage_quantity": 19.43,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-14T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-14T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 2.9441,
+    "usage_quantity": 18.12,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-14T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-14T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 2.0916,
+    "usage_quantity": 20.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-14T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-15T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 58.8932,
+    "usage_quantity": 18.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-15T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-15T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 22.34,
+    "usage_quantity": 17.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-15T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-15T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.6905,
+    "usage_quantity": 19.38,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-15T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-15T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.5973,
+    "usage_quantity": 20.26,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-15T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-15T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.5697,
+    "usage_quantity": 17.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-15T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-15T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 3.8956,
+    "usage_quantity": 18.33,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-15T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-15T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.4908,
+    "usage_quantity": 21.48,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-15T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-15T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.9891,
+    "usage_quantity": 19.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-15T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-16T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 59.1086,
+    "usage_quantity": 18.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-16T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-16T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 24.1012,
+    "usage_quantity": 19.28,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-16T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-16T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 8.7268,
+    "usage_quantity": 17.45,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-16T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-16T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.7243,
+    "usage_quantity": 17.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-16T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-16T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.7668,
+    "usage_quantity": 18.45,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-16T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-16T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.1665,
+    "usage_quantity": 19.61,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-16T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-16T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 2.9179,
+    "usage_quantity": 17.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-16T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-16T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.7911,
+    "usage_quantity": 17.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-16T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-17T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 53.8223,
+    "usage_quantity": 17.22,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-17T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-17T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 24.7552,
+    "usage_quantity": 19.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-17T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-17T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 8.9755,
+    "usage_quantity": 17.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-17T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-17T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.9006,
+    "usage_quantity": 21.07,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-17T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-17T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.5179,
+    "usage_quantity": 20.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-17T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-17T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 3.6598,
+    "usage_quantity": 17.22,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-17T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-17T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 2.9238,
+    "usage_quantity": 17.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-17T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-17T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.9979,
+    "usage_quantity": 19.98,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-17T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-18T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 55.885,
+    "usage_quantity": 17.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-18T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-18T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 21.8821,
+    "usage_quantity": 17.51,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-18T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-18T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 10.6034,
+    "usage_quantity": 21.21,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-18T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-18T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.3228,
+    "usage_quantity": 19.53,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-18T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-18T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.9606,
+    "usage_quantity": 19.07,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-18T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-18T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.3587,
+    "usage_quantity": 20.51,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-18T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-18T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.3503,
+    "usage_quantity": 20.62,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-18T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-18T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.7773,
+    "usage_quantity": 17.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-18T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-19T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 54.1958,
+    "usage_quantity": 17.34,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-19T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-19T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 23.6029,
+    "usage_quantity": 18.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-19T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-19T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.4239,
+    "usage_quantity": 18.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-19T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-19T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.143,
+    "usage_quantity": 19.05,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-19T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-19T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.3299,
+    "usage_quantity": 20.26,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-19T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-19T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.2498,
+    "usage_quantity": 20.0,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-19T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-19T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.4825,
+    "usage_quantity": 21.43,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-19T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-19T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.735,
+    "usage_quantity": 17.35,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-19T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-20T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 58.5977,
+    "usage_quantity": 18.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-20T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-20T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 23.0744,
+    "usage_quantity": 18.46,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-20T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-20T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 10.4333,
+    "usage_quantity": 20.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-20T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-20T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.7657,
+    "usage_quantity": 18.04,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-20T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-20T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.5539,
+    "usage_quantity": 17.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-20T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-20T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.0297,
+    "usage_quantity": 18.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-20T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-20T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.0615,
+    "usage_quantity": 18.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-20T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-20T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.818,
+    "usage_quantity": 18.18,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-20T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-21T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 56.3972,
+    "usage_quantity": 18.05,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-21T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-21T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 26.438,
+    "usage_quantity": 21.15,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-21T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-21T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.469,
+    "usage_quantity": 18.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-21T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-21T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.8244,
+    "usage_quantity": 20.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-21T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-21T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 6.0725,
+    "usage_quantity": 19.43,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-21T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-21T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 3.6399,
+    "usage_quantity": 17.13,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-21T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-21T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.4939,
+    "usage_quantity": 21.5,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-21T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-21T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 2.0748,
+    "usage_quantity": 20.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-21T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-22T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 66.7535,
+    "usage_quantity": 21.36,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-22T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-22T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 26.4559,
+    "usage_quantity": 21.16,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-22T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-22T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 10.4034,
+    "usage_quantity": 20.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-22T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-22T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 6.6234,
+    "usage_quantity": 17.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-22T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-22T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.9793,
+    "usage_quantity": 19.13,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-22T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-22T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 3.7997,
+    "usage_quantity": 17.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-22T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-22T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.0459,
+    "usage_quantity": 18.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-22T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-22T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 1.7166,
+    "usage_quantity": 17.17,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-22T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-23T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 58.2572,
+    "usage_quantity": 18.64,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-23T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-23T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 26.7954,
+    "usage_quantity": 21.44,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-23T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-23T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 9.059,
+    "usage_quantity": 18.12,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-23T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-23T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 7.6909,
+    "usage_quantity": 20.51,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-23T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-23T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 5.9352,
+    "usage_quantity": 18.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-23T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-23T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 4.0046,
+    "usage_quantity": 18.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-23T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-23T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 3.4624,
+    "usage_quantity": 21.31,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-23T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-23T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 2.1483,
+    "usage_quantity": 21.48,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-23T12:05:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-15T14:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 345.0,
+    "usage_quantity": 110.4,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-15T14:03:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-20T09:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 127.0,
+    "usage_quantity": 101.6,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-20T09:03:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-22T16:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 42.0,
+    "usage_quantity": 134.4,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-22T16:03:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T00:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.5335,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T00:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0524,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T00:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3669,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T00:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2854,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T00:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2781,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T00:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1732,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T00:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1313,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T00:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0848,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T01:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.321,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T01:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0598,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T01:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4158,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T01:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.338,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T01:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2384,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T01:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1961,
+    "usage_quantity": 0.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T01:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1214,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T01:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0768,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T02:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.7488,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T02:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1202,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T02:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4027,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T02:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2931,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T02:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2939,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T02:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1716,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T02:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1429,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T02:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0885,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T03:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.7116,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T03:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1283,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T03:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4448,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T03:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3664,
+    "usage_quantity": 0.98,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T03:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2569,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T03:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1978,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T03:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1348,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T03:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0863,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T04:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.9412,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T04:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0757,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T04:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.432,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T04:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3595,
+    "usage_quantity": 0.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T04:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2535,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T04:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1902,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T04:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1645,
+    "usage_quantity": 1.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T04:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.1012,
+    "usage_quantity": 1.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T05:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.5691,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T05:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0661,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T05:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4321,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T05:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3792,
+    "usage_quantity": 1.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T05:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.3124,
+    "usage_quantity": 1.0,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T05:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.2123,
+    "usage_quantity": 1.0,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T05:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1442,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T05:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0841,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T06:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 3.1053,
+    "usage_quantity": 0.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T06:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.2062,
+    "usage_quantity": 0.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T06:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4723,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T06:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3853,
+    "usage_quantity": 1.03,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T06:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2981,
+    "usage_quantity": 0.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T06:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1724,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T06:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1609,
+    "usage_quantity": 0.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T06:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0876,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T07:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.9745,
+    "usage_quantity": 0.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T07:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.2655,
+    "usage_quantity": 1.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T07:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4178,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T07:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3118,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T07:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2592,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T07:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1971,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T07:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1407,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T07:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0939,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T08:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.9723,
+    "usage_quantity": 0.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T08:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0495,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T08:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4665,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T08:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3198,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T08:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2817,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T08:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.2108,
+    "usage_quantity": 0.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T08:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1591,
+    "usage_quantity": 0.98,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T08:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0815,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T09:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.7144,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T09:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0468,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T09:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3897,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T09:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3534,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T09:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2856,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T09:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1773,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T09:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1521,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T09:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0896,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T10:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.6409,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T10:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9485,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T10:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3862,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T10:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3522,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T10:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2948,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T10:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1847,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T10:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.151,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T10:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0877,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T11:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.3777,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T11:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9459,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T11:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3964,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T11:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3415,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T11:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2782,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T11:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1919,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T11:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.148,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T11:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0773,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.3497,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9047,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4269,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3277,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2444,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1749,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1192,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0883,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T13:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.6132,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T13:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.071,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T13:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4131,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T13:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3147,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T13:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2129,
+    "usage_quantity": 0.68,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T13:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1727,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T13:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1199,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T13:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0848,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T14:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.4802,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T14:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0058,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T14:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3976,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T14:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.262,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T14:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2472,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T14:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1425,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T14:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.131,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T14:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0804,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T15:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.086,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T15:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9619,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T15:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3542,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T15:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2556,
+    "usage_quantity": 0.68,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T15:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2393,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T15:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.142,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T15:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1029,
+    "usage_quantity": 0.63,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T15:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0662,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T16:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.0856,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T16:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9462,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T16:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.387,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T16:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2472,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T16:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2249,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T16:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1444,
+    "usage_quantity": 0.68,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T16:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1262,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T16:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0702,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T17:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.3631,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T17:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.7762,
+    "usage_quantity": 0.62,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T17:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3807,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T17:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2367,
+    "usage_quantity": 0.63,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T17:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2375,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T17:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1372,
+    "usage_quantity": 0.65,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T17:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1007,
+    "usage_quantity": 0.62,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T17:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0673,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T18:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.2416,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T18:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.812,
+    "usage_quantity": 0.65,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T18:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3487,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T18:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2557,
+    "usage_quantity": 0.68,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T18:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2066,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T18:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1472,
+    "usage_quantity": 0.69,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T18:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.104,
+    "usage_quantity": 0.64,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T18:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0714,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T19:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 1.8821,
+    "usage_quantity": 0.6,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T19:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9425,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T19:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3452,
+    "usage_quantity": 0.69,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T19:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.27,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T19:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2262,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T19:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1513,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T19:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1075,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T19:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0613,
+    "usage_quantity": 0.61,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T20:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.261,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T20:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.8346,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T20:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3325,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T20:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 85.5,
+    "usage_quantity": 228.0,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T20:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2357,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T20:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1557,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T20:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1077,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T20:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0664,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T21:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.1857,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T21:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.873,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T21:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.34,
+    "usage_quantity": 0.68,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T21:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2442,
+    "usage_quantity": 0.65,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T21:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2192,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T21:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.168,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T21:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1212,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T21:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0784,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T22:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.3766,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T22:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.8808,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T22:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3743,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T22:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2442,
+    "usage_quantity": 0.65,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T22:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2194,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T22:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1546,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T22:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1226,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T22:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0767,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T23:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.3828,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T23:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9478,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T23:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3581,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T23:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2865,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T23:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2634,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T23:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.175,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T23:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.115,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-24T23:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0692,
+    "usage_quantity": 0.69,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-24T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T00:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.5093,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T00:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0319,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T00:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3842,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T00:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3229,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T00:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2651,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T00:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1771,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T00:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1214,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T00:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0742,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T01:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.3006,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T01:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9752,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T01:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.413,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T01:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3378,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T01:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2331,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T01:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.173,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T01:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1393,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T01:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.077,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T02:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.8141,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T02:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0735,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T02:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4036,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T02:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3346,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T02:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2369,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T02:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1938,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T02:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1488,
+    "usage_quantity": 0.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T02:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0779,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T03:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.7155,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T03:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.02,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T03:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4911,
+    "usage_quantity": 0.98,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T03:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3332,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T03:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2467,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T03:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1767,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T03:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1558,
+    "usage_quantity": 0.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T03:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0876,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T04:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 3.0291,
+    "usage_quantity": 0.97,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T04:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1753,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T04:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.5049,
+    "usage_quantity": 1.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T04:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3467,
+    "usage_quantity": 0.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T04:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.313,
+    "usage_quantity": 1.0,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T04:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.2101,
+    "usage_quantity": 0.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T04:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1509,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T04:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0951,
+    "usage_quantity": 0.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T05:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.8655,
+    "usage_quantity": 0.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T05:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.2357,
+    "usage_quantity": 0.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T05:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4632,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T05:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3762,
+    "usage_quantity": 1.0,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T05:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.303,
+    "usage_quantity": 0.97,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T05:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1934,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T05:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1402,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T05:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.086,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T06:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.97,
+    "usage_quantity": 0.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T06:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.2234,
+    "usage_quantity": 0.98,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T06:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4624,
+    "usage_quantity": 0.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T06:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3555,
+    "usage_quantity": 0.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T06:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2719,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T06:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1757,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T06:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1418,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T06:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.087,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T07:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.7384,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T07:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1559,
+    "usage_quantity": 0.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T07:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4182,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T07:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3213,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T07:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2995,
+    "usage_quantity": 0.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T07:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.2043,
+    "usage_quantity": 0.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T07:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1333,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T07:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0896,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T08:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.8536,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T08:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1071,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T08:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4202,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T08:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3325,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T08:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.3099,
+    "usage_quantity": 0.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T08:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.196,
+    "usage_quantity": 0.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T08:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1538,
+    "usage_quantity": 0.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T08:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0981,
+    "usage_quantity": 0.98,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T09:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.9414,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T09:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0743,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T09:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.39,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T09:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.32,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T09:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2933,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T09:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.204,
+    "usage_quantity": 0.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T09:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1594,
+    "usage_quantity": 0.98,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T09:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0868,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T10:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.8471,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T10:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0869,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T10:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 27.2,
+    "usage_quantity": 54.4,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T10:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3305,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T10:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2507,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T10:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1704,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T10:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1376,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T10:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0763,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T11:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.4949,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T11:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0835,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T11:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.406,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T11:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2866,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T11:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2577,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T11:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1608,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T11:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.139,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T11:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0737,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.4364,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0155,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3546,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3103,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2281,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1684,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.116,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0777,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T13:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.2367,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T13:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9212,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T13:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4086,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T13:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.28,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T13:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2548,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T13:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1764,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T13:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1175,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T13:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0692,
+    "usage_quantity": 0.69,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T13:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T14:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.0458,
+    "usage_quantity": 0.65,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T14:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9338,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T14:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4144,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T14:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2675,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T14:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2396,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T14:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1679,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T14:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1246,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T14:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0785,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T14:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T15:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.476,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T15:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.8294,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T15:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3164,
+    "usage_quantity": 0.63,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T15:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2458,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T15:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2034,
+    "usage_quantity": 0.65,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T15:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1581,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T15:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.118,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T15:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0667,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T15:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T16:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.2794,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T16:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9258,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T16:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3203,
+    "usage_quantity": 0.64,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T16:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2677,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T16:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2305,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T16:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1342,
+    "usage_quantity": 0.63,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T16:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1218,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T16:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0774,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T16:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T17:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 1.9367,
+    "usage_quantity": 0.62,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T17:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.7578,
+    "usage_quantity": 0.61,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T17:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3266,
+    "usage_quantity": 0.65,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T17:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2675,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T17:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2373,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T17:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1418,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T17:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1169,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T17:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0614,
+    "usage_quantity": 0.61,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T17:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T18:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.2222,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T18:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.876,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T18:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3075,
+    "usage_quantity": 0.61,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T18:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2717,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T18:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2304,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T18:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.148,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T18:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1005,
+    "usage_quantity": 0.62,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T18:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0759,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T18:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T19:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.2828,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T19:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.8238,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T19:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3362,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T19:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2486,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T19:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2141,
+    "usage_quantity": 0.69,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T19:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1398,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T19:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1205,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T19:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0737,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T19:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T20:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 1.9693,
+    "usage_quantity": 0.63,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T20:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9663,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T20:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3594,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T20:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2816,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T20:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2283,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T20:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1456,
+    "usage_quantity": 0.69,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T20:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1195,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T20:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0774,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T20:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T21:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.1115,
+    "usage_quantity": 0.68,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T21:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9601,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T21:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3608,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T21:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2671,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T21:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.22,
+    "usage_quantity": 0.7,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T21:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1604,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T21:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1098,
+    "usage_quantity": 0.68,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T21:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0776,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T21:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T22:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.4961,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T22:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.8332,
+    "usage_quantity": 0.67,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T22:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4039,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T22:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2604,
+    "usage_quantity": 0.69,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T22:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2293,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T22:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1614,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T22:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1168,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T22:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0656,
+    "usage_quantity": 0.66,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T22:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T23:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.6053,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T23:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.8878,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T23:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3579,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T23:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.309,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T23:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2311,
+    "usage_quantity": 0.74,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T23:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1783,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T23:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.131,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-25T23:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0728,
+    "usage_quantity": 0.73,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-25T23:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T00:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.2061,
+    "usage_quantity": 0.71,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T00:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1075,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T00:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3602,
+    "usage_quantity": 0.72,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T00:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3158,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T00:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2493,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T00:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1805,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T00:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1359,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T00:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0828,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T00:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T01:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.5913,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T01:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1119,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T01:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3749,
+    "usage_quantity": 0.75,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T01:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2908,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T01:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2717,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T01:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1684,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T01:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1377,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T01:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0826,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T01:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T02:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.7074,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T02:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0558,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T02:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4554,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T02:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3094,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T02:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2818,
+    "usage_quantity": 0.9,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T02:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1727,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T02:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1314,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T02:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0782,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T02:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T03:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.5612,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T03:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0051,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T03:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4462,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T03:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3527,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T03:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2556,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T03:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1752,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T03:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1432,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T03:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0933,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T03:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T04:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 3.1479,
+    "usage_quantity": 1.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T04:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1366,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T04:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4284,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T04:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3065,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T04:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2617,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T04:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1795,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T04:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1356,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T04:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0799,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T04:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T05:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.8857,
+    "usage_quantity": 0.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T05:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0829,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T05:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.5101,
+    "usage_quantity": 1.02,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T05:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3479,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T05:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2998,
+    "usage_quantity": 0.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T05:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1772,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T05:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.162,
+    "usage_quantity": 1.0,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T05:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0914,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T05:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T06:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 3.1322,
+    "usage_quantity": 1.0,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T06:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1704,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T06:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4566,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T06:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3401,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T06:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2657,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T06:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1745,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T06:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1653,
+    "usage_quantity": 1.02,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T06:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0915,
+    "usage_quantity": 0.92,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T06:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T07:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 3.0835,
+    "usage_quantity": 0.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T07:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.1176,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T07:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4111,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T07:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3541,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T07:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2556,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T07:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1782,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T07:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1511,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T07:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0873,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T07:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T08:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 230.0,
+    "usage_quantity": 73.6,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T08:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.2638,
+    "usage_quantity": 1.01,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T08:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4106,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T08:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3605,
+    "usage_quantity": 0.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T08:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2897,
+    "usage_quantity": 0.93,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T08:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.2055,
+    "usage_quantity": 0.97,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T08:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1372,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T08:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0909,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T08:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T09:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.7323,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T09:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0909,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T09:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4807,
+    "usage_quantity": 0.96,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T09:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3708,
+    "usage_quantity": 0.99,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T09:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2636,
+    "usage_quantity": 0.84,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T09:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1935,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T09:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1476,
+    "usage_quantity": 0.91,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T09:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0936,
+    "usage_quantity": 0.94,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T09:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T10:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.9762,
+    "usage_quantity": 0.95,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T10:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 0.9996,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T10:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.4002,
+    "usage_quantity": 0.8,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T10:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3349,
+    "usage_quantity": 0.89,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T10:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2466,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T10:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1684,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T10:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1255,
+    "usage_quantity": 0.77,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T10:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0757,
+    "usage_quantity": 0.76,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T10:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T11:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.5662,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T11:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0622,
+    "usage_quantity": 0.85,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T11:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.3947,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T11:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.2916,
+    "usage_quantity": 0.78,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T11:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.2726,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T11:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1852,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T11:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1336,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T11:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0868,
+    "usage_quantity": 0.87,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T11:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "cost": 2.7543,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "cost": 1.0691,
+    "usage_quantity": 0.86,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "cost": 0.412,
+    "usage_quantity": 0.82,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "cost": 0.3116,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "service": "AWS Lambda",
+    "region": "us-west-2",
+    "cost": 0.276,
+    "usage_quantity": 0.88,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "service": "Amazon DynamoDB",
+    "region": "us-east-1",
+    "cost": 0.1669,
+    "usage_quantity": 0.79,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "service": "Amazon ElastiCache",
+    "region": "us-east-1",
+    "cost": 0.1314,
+    "usage_quantity": 0.81,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T12:02:00Z"
+    }
+  },
+  {
+    "timestamp": {
+      "$date": "2026-03-26T12:00:00Z"
+    },
+    "service": "AWS Glue",
+    "region": "us-east-2",
+    "cost": 0.0828,
+    "usage_quantity": 0.83,
+    "currency": "USD",
+    "created_at": {
+      "$date": "2026-03-26T12:02:00Z"
+    }
+  }
+]

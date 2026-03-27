@@ -1,0 +1,26 @@
+[
+  {
+    "anomaly_id": "65f1a2b3c4d5e6f789012340",
+    "is_real": true,
+    "comment": "Confirmed - unauthorized instances, security team engaged. Terminated and access keys revoked.",
+    "submitted_at": {
+      "$date": "2026-03-15T15:10:00Z"
+    }
+  },
+  {
+    "anomaly_id": "65f1a2b3c4d5e6f789012341",
+    "is_real": true,
+    "comment": "Legitimate but unplanned - bad query in migration job. Engineering fixed it.",
+    "submitted_at": {
+      "$date": "2026-03-20T12:30:00Z"
+    }
+  },
+  {
+    "anomaly_id": "65f1a2b3c4d5e6f789012342",
+    "is_real": true,
+    "comment": "Recursive Lambda bug - hotfix deployed. Not a security issue.",
+    "submitted_at": {
+      "$date": "2026-03-22T18:00:00Z"
+    }
+  }
+]

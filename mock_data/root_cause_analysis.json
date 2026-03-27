@@ -1,0 +1,103 @@
+[
+  {
+    "anomaly_id": "65f1a2b3c4d5e6f789012340",
+    "explanation": "A fleet of 47 unauthorized g4dn.12xlarge GPU instances was launched in us-east-1 at 14:02 UTC on March 15. These instances were not provisioned by any known CI/CD pipeline or infrastructure-as-code change. CloudTrail logs reveal the instances were created via the root account using an API key last rotated 8 months ago. The workload pattern (100% GPU utilization, no VPC egress) is consistent with cryptocurrency mining. The instances were terminated at 17:34 UTC after the alert was acknowledged.",
+    "evidence": {
+      "instance_count": 47,
+      "instance_type": "g4dn.12xlarge",
+      "launched_by": "root (AccessKeyId: AKIAIOSFODNN7EXAMPLE)",
+      "cloudtrail_event": "RunInstances",
+      "gpu_utilization_avg": "99.8%",
+      "vpc_egress_gb": 0.0
+    },
+    "confidence": 0.97,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-15T14:12:00Z"
+    }
+  },
+  {
+    "anomaly_id": "65f1a2b3c4d5e6f789012341",
+    "explanation": "An unoptimized analytical query was deployed to the production RDS PostgreSQL cluster (db.r6g.2xlarge) at 08:47 UTC on March 20 as part of a data migration job. The query performed a full sequential scan on the 'events' table (1.8 TB) without using available indexes, triggering 127 IOPS bursts and sustained high CPU. The database auto-scaled read replicas three times, each adding ~$42/hr. The query was killed at 11:15 UTC and the migration was rescheduled with proper index hints.",
+    "evidence": {
+      "query_type": "SELECT * full scan",
+      "table": "events",
+      "table_size_gb": 1800,
+      "replicas_spawned": 3,
+      "cpu_peak_pct": 97.4,
+      "iops_burst_count": 127
+    },
+    "confidence": 0.94,
+    "is_legitimate": true,
+    "created_at": {
+      "$date": "2026-03-20T09:18:00Z"
+    }
+  },
+  {
+    "anomaly_id": "65f1a2b3c4d5e6f789012342",
+    "explanation": "A recursive Lambda invocation loop was introduced by a deploy at 16:02 UTC on March 22. The image-processing function 'process-upload' was incorrectly configured to trigger on all S3 PUT events in the output bucket \u2014 including events it generated itself. Within 14 minutes the function had self-invoked 168,420 times at an average duration of 3.2s. AWS service limits eventually throttled the invocations. The S3 trigger was corrected via a hotfix deploy at 16:48 UTC.",
+    "evidence": {
+      "function_name": "process-upload",
+      "total_invocations": 168420,
+      "avg_duration_ms": 3200,
+      "trigger": "S3 ObjectCreated (all)",
+      "throttled_at": "2026-03-22T16:16:00Z"
+    },
+    "confidence": 0.99,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-22T16:22:00Z"
+    }
+  },
+  {
+    "anomaly_id": "65f1a2b3c4d5e6f789012343",
+    "explanation": "A sustained DDoS attack targeting the /api/search endpoint caused CloudFront to serve 2.4 TB of content between 20:00\u201322:45 UTC on March 24. The attack originated from 8,400 unique IPs across 34 countries. CloudFront WAF rules were not configured to rate-limit unauthenticated search requests. AWS Shield Standard mitigated the volumetric component at 22:48 UTC. WAF rate-limiting rules have been deployed as an immediate fix.",
+    "evidence": {
+      "traffic_tb": 2.4,
+      "unique_ips": 8400,
+      "countries": 34,
+      "target_endpoint": "/api/search",
+      "waf_rules_missing": "rate-limit unauthenticated",
+      "shield_mitigation_utc": "2026-03-24T22:48:00Z"
+    },
+    "confidence": 0.91,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-24T20:31:00Z"
+    }
+  },
+  {
+    "anomaly_id": "65f1a2b3c4d5e6f789012344",
+    "explanation": "A scheduled data export job transferred 6.8 TB of analytics data from S3 us-east-1 to a partner S3 bucket in eu-west-1 at 10:00 UTC on March 25. Cross-region data transfer fees of $0.02/GB applied. This is a legitimate quarterly export but the associated budget allocation was not updated to reflect the increased data volume. Recommend updating the S3 budget and notifying finance of the recurring quarterly charge.",
+    "evidence": {
+      "transfer_gb": 6800,
+      "source_region": "us-east-1",
+      "dest_region": "eu-west-1",
+      "transfer_rate_per_gb": 0.02,
+      "job_name": "quarterly-partner-export"
+    },
+    "confidence": 0.88,
+    "is_legitimate": true,
+    "created_at": {
+      "$date": "2026-03-25T10:19:00Z"
+    }
+  },
+  {
+    "anomaly_id": "65f1a2b3c4d5e6f789012345",
+    "explanation": "A misconfigured Auto Scaling Group for the 'api-backend' service triggered a runaway scale-out event at 07:58 UTC on March 26. The CloudWatch alarm threshold was set to CPU > 5% (should be 70%), causing ASG to scale from 3 to 92 c6i.4xlarge instances within 6 minutes. The misconfiguration was introduced in a Terraform plan applied at 07:45 UTC. The ASG was manually scaled back to 3 instances at 08:34 UTC and the Terraform state was corrected.",
+    "evidence": {
+      "asg_name": "api-backend-asg",
+      "scale_from": 3,
+      "scale_to": 92,
+      "instance_type": "c6i.4xlarge",
+      "alarm_threshold_wrong": "CPU > 5%",
+      "alarm_threshold_correct": "CPU > 70%",
+      "terraform_apply_utc": "2026-03-26T07:45:00Z"
+    },
+    "confidence": 0.98,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-26T08:17:00Z"
+    }
+  }
+]

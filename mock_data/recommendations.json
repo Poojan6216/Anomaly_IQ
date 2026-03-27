@@ -1,0 +1,110 @@
+[
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012360"
+    },
+    "anomaly_id": "65f1a2b3c4d5e6f789012340",
+    "action": "Rotate all AWS root account and IAM access keys; enforce MFA via SCP",
+    "detail": "The March 15 crypto-mining incident used a root account API key rotated 8+ months ago. Enforce 90-day key rotation policy and disable root account programmatic access entirely.",
+    "estimated_savings": 1240.0,
+    "savings_period": "monthly",
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "effort": "low",
+    "priority": 1,
+    "status": "approved",
+    "created_at": {
+      "$date": "2026-03-15T15:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012361"
+    },
+    "anomaly_id": "65f1a2b3c4d5e6f789012341",
+    "action": "Add EXPLAIN ANALYZE gate in CI/CD for queries on tables larger than 100 GB",
+    "detail": "Require query plan review before merging migrations that touch large tables. Estimated to prevent 2-3 similar incidents per quarter saving ~$380/month.",
+    "estimated_savings": 380.0,
+    "savings_period": "monthly",
+    "service": "Amazon RDS",
+    "region": "us-east-1",
+    "effort": "medium",
+    "priority": 2,
+    "status": "approved",
+    "created_at": {
+      "$date": "2026-03-20T12:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012362"
+    },
+    "anomaly_id": "65f1a2b3c4d5e6f789012343",
+    "action": "Deploy WAF rate-limiting: max 100 req/min per IP on unauthenticated endpoints",
+    "detail": "CloudFront WAF lacks rate-limiting for public endpoints. Add rate-based rules for /api/search and other unauthenticated routes to prevent DDoS-driven cost spikes.",
+    "estimated_savings": 520.0,
+    "savings_period": "monthly",
+    "service": "Amazon CloudFront",
+    "region": "us-east-1",
+    "effort": "low",
+    "priority": 1,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-24T21:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012363"
+    },
+    "anomaly_id": null,
+    "action": "Switch 18 always-on dev/test EC2 instances to 1-year Savings Plans (no-upfront)",
+    "detail": "18 EC2 instances in dev/staging show >95% uptime over last 90 days. Switching to 1-year Savings Plans reduces their on-demand rate by 37%.",
+    "estimated_savings": 680.0,
+    "savings_period": "monthly",
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "effort": "low",
+    "priority": 1,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-10T09:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012364"
+    },
+    "anomaly_id": null,
+    "action": "Enable S3 Intelligent-Tiering on the analytics-archive bucket (4.2 TB)",
+    "detail": "analytics-archive has 4.2 TB with irregular access patterns. Intelligent-Tiering auto-moves infrequent objects to cheaper tiers with no retrieval fees.",
+    "estimated_savings": 142.0,
+    "savings_period": "monthly",
+    "service": "Amazon S3",
+    "region": "us-east-1",
+    "effort": "low",
+    "priority": 3,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-05T09:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f1a2b3c4d5e6f789012365"
+    },
+    "anomaly_id": "65f1a2b3c4d5e6f789012345",
+    "action": "Add OPA policy in Terraform CI to block ASG alarm thresholds below 20% CPU",
+    "detail": "The March 26 runaway ASG was caused by a CloudWatch alarm set to CPU > 5%. Implement an OPA rule to reject alarm configs with thresholds below 20% before apply.",
+    "estimated_savings": 890.0,
+    "savings_period": "monthly",
+    "service": "Amazon EC2",
+    "region": "us-east-1",
+    "effort": "medium",
+    "priority": 1,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-26T09:00:00Z"
+    }
+  }
+]

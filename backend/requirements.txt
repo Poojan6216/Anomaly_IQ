@@ -1,0 +1,40 @@
+# ── Web Framework ─────────────────────────────────────────────────────────────
+fastapi==0.115.0
+uvicorn[standard]==0.30.0        # ASGI server with websocket support
+
+# ── Database ──────────────────────────────────────────────────────────────────
+pymongo[srv]==4.8.0              # MongoDB driver (srv = Atlas connection strings)
+
+# ── AWS SDK ───────────────────────────────────────────────────────────────────
+boto3>=1.35.0                    # Cost Explorer, CloudWatch, CloudTrail, SES
+botocore>=1.35.0                 # AWS core (auto-installed with boto3, pinned for clarity)
+
+# ── AI / LLM ──────────────────────────────────────────────────────────────────
+anthropic>=0.50.0                # Claude API — supports claude-opus-4-6 + adaptive thinking
+
+# ── ML / Data Science ─────────────────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.0              # IsolationForest for anomaly detection
+prophet>=1.3.0                   # Facebook Prophet for time-series forecasting
+statsmodels>=0.14.0              # ARIMA fallback forecaster (used in agent4)
+
+# ── Task Scheduling ───────────────────────────────────────────────────────────
+apscheduler==3.10.4              # Background scheduler for agent pipeline
+
+# ── HTTP Client ───────────────────────────────────────────────────────────────
+httpx>=0.27.0                    # Async HTTP for Slack webhooks
+
+# ── Config / Env ──────────────────────────────────────────────────────────────
+python-dotenv==1.0.0             # Load .env file
+
+# ── Data Validation ───────────────────────────────────────────────────────────
+pydantic==2.8.0                  # Request/response models
+
+# ── WebSocket ─────────────────────────────────────────────────────────────────
+websockets==12.0                 # WebSocket server support for real-time dashboard
+
+# ── Optional: SMS Alerts ───────────────────────────────────────────────────────
+# twilio>=8.0.0                  # Uncomment to enable SMS alerts for Critical anomalies
+#                                # Set TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN,
+#                                # TWILIO_FROM_NUMBER, ALERT_TO_PHONE in .env
