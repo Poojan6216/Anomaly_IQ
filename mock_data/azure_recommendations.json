@@ -1,0 +1,110 @@
+[
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f7a9000000"
+    },
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000000",
+    "action": "Rotate service principal secrets and enforce MFA for all Azure AD app registrations",
+    "estimated_savings": 1240.0,
+    "savings_period": "monthly",
+    "service": "Azure Virtual Machines",
+    "region": "eastus",
+    "effort": "low",
+    "priority": 1,
+    "status": "approved",
+    "created_at": {
+      "$date": "2026-03-15T15:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f7a9000001"
+    },
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000001",
+    "action": "Add EXPLAIN ANALYZE gate in ADO pipeline for Azure SQL migrations on tables > 100GB",
+    "estimated_savings": 380.0,
+    "savings_period": "monthly",
+    "service": "Azure SQL Database",
+    "region": "eastus",
+    "effort": "medium",
+    "priority": 2,
+    "status": "approved",
+    "created_at": {
+      "$date": "2026-03-20T12:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f7a9000002"
+    },
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000003",
+    "action": "Enable Azure WAF rate-limiting policy: max 100 req/min per IP on unauthenticated endpoints",
+    "estimated_savings": 520.0,
+    "savings_period": "monthly",
+    "service": "Azure CDN",
+    "region": "eastus",
+    "effort": "low",
+    "priority": 1,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-24T21:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f7a9000003"
+    },
+    "provider": "azure",
+    "anomaly_id": null,
+    "action": "Switch 18 always-on dev/test VMs to Azure Reserved Instances (1-year, no-upfront)",
+    "estimated_savings": 680.0,
+    "savings_period": "monthly",
+    "service": "Azure Virtual Machines",
+    "region": "eastus",
+    "effort": "low",
+    "priority": 1,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-10T09:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f7a9000004"
+    },
+    "provider": "azure",
+    "anomaly_id": null,
+    "action": "Enable Azure Blob Storage lifecycle management to move cold blobs to Cool/Archive tier",
+    "estimated_savings": 142.0,
+    "savings_period": "monthly",
+    "service": "Azure Blob Storage",
+    "region": "eastus",
+    "effort": "low",
+    "priority": 3,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-05T09:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f7a9000005"
+    },
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000005",
+    "action": "Add Azure Policy to block VMSS CPU alert thresholds below 20%",
+    "estimated_savings": 890.0,
+    "savings_period": "monthly",
+    "service": "Azure Virtual Machines",
+    "region": "eastus",
+    "effort": "medium",
+    "priority": 1,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-26T09:00:00Z"
+    }
+  }
+]

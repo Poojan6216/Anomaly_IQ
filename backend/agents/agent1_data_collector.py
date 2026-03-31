@@ -127,6 +127,7 @@ def collect_cost_data() -> List[Dict[str, Any]]:
             usage = float(metrics.get("UsageQuantity", {}).get("Amount", 0))
 
             record: Dict[str, Any] = {
+                "provider": "aws",
                 "timestamp": period_start,
                 "service": service,
                 "region": region,
@@ -142,13 +143,13 @@ def collect_cost_data() -> List[Dict[str, Any]]:
             from pymongo import UpdateOne
             ops = [
                 UpdateOne(
-                    {"timestamp": r["timestamp"], "service": r["service"], "region": r["region"]},
+                    {"provider": r["provider"], "timestamp": r["timestamp"], "service": r["service"], "region": r["region"]},
                     {"$set": r},
                     upsert=True,
                 )
                 for r in records
             ]
-            result = db["aws_billing_raw"].bulk_write(ops, ordered=False)
+            result = db["billing_raw"].bulk_write(ops, ordered=False)
             logger.info(
                 "Upserted %d billing records (%d inserted, %d updated).",
                 len(records), result.upserted_count, result.modified_count,

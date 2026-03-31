@@ -23,14 +23,14 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 
-def _load_history(service: Optional[str] = None, lookback_days: int = 90) -> pd.DataFrame:
+def _load_history(service: Optional[str] = None, lookback_days: int = 90, provider: str = "aws") -> pd.DataFrame:
     """Return a DataFrame with columns [ds, y] from MongoDB billing history."""
     from backend.database.mongodb import get_db
 
     db = get_db()
     cutoff = datetime.now(timezone.utc) - timedelta(days=lookback_days)
 
-    query: Dict[str, Any] = {"timestamp": {"$gte": cutoff}}
+    query: Dict[str, Any] = {"provider": provider, "timestamp": {"$gte": cutoff}}
     if service and service != "ALL":
         query["service"] = service
 
@@ -50,7 +50,7 @@ def _load_history(service: Optional[str] = None, lookback_days: int = 90) -> pd.
         {"$sort": {"_id": 1}},
     ]
 
-    records = list(db["aws_billing_raw"].aggregate(pipeline))
+    records = list(db["billing_raw"].aggregate(pipeline))
     if not records:
         return pd.DataFrame(columns=["ds", "y"])
 
@@ -120,7 +120,7 @@ def _run_arima(df: pd.DataFrame, days: int) -> pd.DataFrame:
 # ---------------------------------------------------------------------------
 
 
-def generate_forecast(service: Optional[str] = None, days: int = 30) -> Optional[Dict[str, Any]]:
+def generate_forecast(service: Optional[str] = None, days: int = 30, provider: str = "aws") -> Optional[Dict[str, Any]]:
     """
     Train a forecasting model on historical data and store predictions.
 
@@ -131,7 +131,7 @@ def generate_forecast(service: Optional[str] = None, days: int = 30) -> Optional
     db = get_db()
     service_key = service or "ALL"
 
-    df = _load_history(service=service, lookback_days=90)
+    df = _load_history(service=service, lookback_days=90, provider=provider)
 
     if df.empty or len(df) < 48:
         logger.warning("Insufficient data to forecast service=%s (rows=%d).", service_key, len(df))
@@ -188,6 +188,7 @@ def generate_forecast(service: Optional[str] = None, days: int = 30) -> Optional
         mape = None
 
     forecast_doc: Dict[str, Any] = {
+        "provider": provider,
         "forecast_date": datetime.now(timezone.utc),
         "service": service_key,
         "horizon_days": days,
@@ -234,15 +235,16 @@ def check_budget_breach(budget_id: str) -> Optional[Dict[str, Any]]:
 
     service = budget.get("service_filter")
     budget_limit: float = float(budget.get("limit", 0))
+    provider: str = budget.get("provider", "aws")
 
     # Latest forecast — try service-specific first, fall back to "ALL"
     forecast = db["forecasts"].find_one(
-        {"service": service or "ALL"},
+        {"provider": provider, "service": service or "ALL"},
         sort=[("created_at", -1)],
     )
     if not forecast and service:
         forecast = db["forecasts"].find_one(
-            {"service": "ALL"},
+            {"provider": provider, "service": "ALL"},
             sort=[("created_at", -1)],
         )
 

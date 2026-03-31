@@ -1,0 +1,145 @@
+[
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f789000000"
+    },
+    "provider": "gcp",
+    "timestamp": {
+      "$date": "2026-03-15T14:00:00Z"
+    },
+    "severity": "Critical",
+    "service": "Compute Engine",
+    "region": "us-central1",
+    "baseline_cost": 2.52,
+    "actual_cost": 345.82,
+    "cost_delta": 343.3,
+    "percentage_increase": 13623.0,
+    "detection_methods": [
+      "isolation_forest",
+      "zscore"
+    ],
+    "status": "resolved",
+    "created_at": {
+      "$date": "2026-03-15T14:05:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f789000001"
+    },
+    "provider": "gcp",
+    "timestamp": {
+      "$date": "2026-03-20T09:00:00Z"
+    },
+    "severity": "High",
+    "service": "Cloud SQL",
+    "region": "us-central1",
+    "baseline_cost": 1.01,
+    "actual_cost": 128.47,
+    "cost_delta": 127.46,
+    "percentage_increase": 12620.0,
+    "detection_methods": [
+      "isolation_forest",
+      "zscore"
+    ],
+    "status": "resolved",
+    "created_at": {
+      "$date": "2026-03-20T09:05:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f789000002"
+    },
+    "provider": "gcp",
+    "timestamp": {
+      "$date": "2026-03-22T16:00:00Z"
+    },
+    "severity": "Medium",
+    "service": "Cloud Functions",
+    "region": "europe-west1",
+    "baseline_cost": 0.25,
+    "actual_cost": 42.03,
+    "cost_delta": 41.78,
+    "percentage_increase": 16712.0,
+    "detection_methods": [
+      "zscore"
+    ],
+    "status": "acknowledged",
+    "created_at": {
+      "$date": "2026-03-22T16:05:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f789000003"
+    },
+    "provider": "gcp",
+    "timestamp": {
+      "$date": "2026-03-24T20:00:00Z"
+    },
+    "severity": "High",
+    "service": "Cloud CDN",
+    "region": "us-central1",
+    "baseline_cost": 0.3,
+    "actual_cost": 85.62,
+    "cost_delta": 85.32,
+    "percentage_increase": 28440.0,
+    "detection_methods": [
+      "isolation_forest",
+      "zscore",
+      "rolling_window"
+    ],
+    "status": "open",
+    "created_at": {
+      "$date": "2026-03-24T20:05:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f789000004"
+    },
+    "provider": "gcp",
+    "timestamp": {
+      "$date": "2026-03-25T10:00:00Z"
+    },
+    "severity": "Low",
+    "service": "Cloud Storage",
+    "region": "us-central1",
+    "baseline_cost": 0.41,
+    "actual_cost": 27.88,
+    "cost_delta": 27.47,
+    "percentage_increase": 6699.0,
+    "detection_methods": [
+      "rolling_window"
+    ],
+    "status": "open",
+    "created_at": {
+      "$date": "2026-03-25T10:05:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f789000005"
+    },
+    "provider": "gcp",
+    "timestamp": {
+      "$date": "2026-03-26T08:00:00Z"
+    },
+    "severity": "High",
+    "service": "Compute Engine",
+    "region": "us-central1",
+    "baseline_cost": 2.49,
+    "actual_cost": 229.38,
+    "cost_delta": 226.89,
+    "percentage_increase": 9112.0,
+    "detection_methods": [
+      "isolation_forest",
+      "zscore"
+    ],
+    "status": "open",
+    "created_at": {
+      "$date": "2026-03-26T08:05:00Z"
+    }
+  }
+]

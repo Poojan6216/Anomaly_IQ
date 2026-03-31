@@ -1,0 +1,29 @@
+[
+  {
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000000",
+    "is_real": true,
+    "comment": "Confirmed \u2014 unauthorized VMs. Security team engaged, service principal revoked.",
+    "submitted_at": {
+      "$date": "2026-03-15T15:10:00Z"
+    }
+  },
+  {
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000001",
+    "is_real": true,
+    "comment": "Legitimate but unplanned \u2014 bad query in migration job. Fixed.",
+    "submitted_at": {
+      "$date": "2026-03-20T12:30:00Z"
+    }
+  },
+  {
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000002",
+    "is_real": true,
+    "comment": "Recursive function bug \u2014 hotfix deployed.",
+    "submitted_at": {
+      "$date": "2026-03-22T18:00:00Z"
+    }
+  }
+]

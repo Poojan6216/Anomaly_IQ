@@ -1,0 +1,110 @@
+[
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f7a9000000"
+    },
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000000",
+    "action": "Rotate service account keys and enforce Workload Identity Federation for GKE workloads",
+    "estimated_savings": 1240.0,
+    "savings_period": "monthly",
+    "service": "Compute Engine",
+    "region": "us-central1",
+    "effort": "low",
+    "priority": 1,
+    "status": "approved",
+    "created_at": {
+      "$date": "2026-03-15T15:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f7a9000001"
+    },
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000001",
+    "action": "Add EXPLAIN ANALYZE gate in Cloud Build pipeline for Cloud SQL migrations on tables > 100GB",
+    "estimated_savings": 380.0,
+    "savings_period": "monthly",
+    "service": "Cloud SQL",
+    "region": "us-central1",
+    "effort": "medium",
+    "priority": 2,
+    "status": "approved",
+    "created_at": {
+      "$date": "2026-03-20T12:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f7a9000002"
+    },
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000003",
+    "action": "Configure Cloud Armor rate-limiting rule: max 100 req/min per IP on unauthenticated endpoints",
+    "estimated_savings": 520.0,
+    "savings_period": "monthly",
+    "service": "Cloud CDN",
+    "region": "us-central1",
+    "effort": "low",
+    "priority": 1,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-24T21:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f7a9000003"
+    },
+    "provider": "gcp",
+    "anomaly_id": null,
+    "action": "Switch 18 always-on dev/test Compute Engine instances to 1-year Committed Use Discounts",
+    "estimated_savings": 680.0,
+    "savings_period": "monthly",
+    "service": "Compute Engine",
+    "region": "us-central1",
+    "effort": "low",
+    "priority": 1,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-10T09:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f7a9000004"
+    },
+    "provider": "gcp",
+    "anomaly_id": null,
+    "action": "Enable Cloud Storage Object Lifecycle Management to move infrequent objects to Nearline/Coldline",
+    "estimated_savings": 142.0,
+    "savings_period": "monthly",
+    "service": "Cloud Storage",
+    "region": "us-central1",
+    "effort": "low",
+    "priority": 3,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-05T09:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f7a9000005"
+    },
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000005",
+    "action": "Add OPA constraint in Terraform CI to block MIG autoscaler CPU targets below 20%",
+    "estimated_savings": 890.0,
+    "savings_period": "monthly",
+    "service": "Compute Engine",
+    "region": "us-central1",
+    "effort": "medium",
+    "priority": 1,
+    "status": "pending",
+    "created_at": {
+      "$date": "2026-03-26T09:00:00Z"
+    }
+  }
+]

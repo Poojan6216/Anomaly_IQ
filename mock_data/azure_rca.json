@@ -1,0 +1,109 @@
+[
+  {
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000000",
+    "explanation": "Unauthorized GPU VM scale-out: 47 NC24s_v3 VMs launched via compromised service principal. GPU utilization 99.8%, no egress \u2014 consistent with crypto-mining. VMs terminated after alert.",
+    "evidence": {
+      "vm_count": 47,
+      "vm_size": "NC24s_v3",
+      "launched_by": "service-principal: sp-deploy-prod",
+      "gpu_utilization": "99.8%",
+      "provider": "azure"
+    },
+    "confidence": 0.97,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-15T14:12:00Z"
+    }
+  },
+  {
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000001",
+    "explanation": "Unoptimized analytical query ran full scan on 'events' table (1.8 TB) in Azure SQL. Triggered 3x compute tier auto-scale. Query killed at 11:15 UTC, migration rescheduled.",
+    "evidence": {
+      "query_type": "SELECT * full scan",
+      "table": "events",
+      "table_size_gb": 1800,
+      "scale_events": 3,
+      "cpu_peak": "97.4%",
+      "provider": "azure"
+    },
+    "confidence": 0.94,
+    "is_legitimate": true,
+    "created_at": {
+      "$date": "2026-03-20T09:18:00Z"
+    }
+  },
+  {
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000002",
+    "explanation": "Recursive Azure Functions invocation loop introduced by deploy at 16:02 UTC. Function triggered on its own output blob. 168,420 self-invocations in 14 min. Hotfix deployed 16:48.",
+    "evidence": {
+      "function_name": "process-upload",
+      "invocations": 168420,
+      "avg_duration_ms": 3200,
+      "trigger": "Blob storage (all)",
+      "provider": "azure"
+    },
+    "confidence": 0.99,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-22T16:22:00Z"
+    }
+  },
+  {
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000003",
+    "explanation": "DDoS attack on /api/search caused Azure CDN to serve 2.4 TB between 20:00\u201322:45 UTC. 8,400 unique IPs, 34 countries. WAF rate-limiting missing on unauthenticated endpoints.",
+    "evidence": {
+      "traffic_tb": 2.4,
+      "unique_ips": 8400,
+      "countries": 34,
+      "target": "/api/search",
+      "waf_gap": "rate-limit unauthenticated",
+      "provider": "azure"
+    },
+    "confidence": 0.91,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-24T20:31:00Z"
+    }
+  },
+  {
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000004",
+    "explanation": "Scheduled quarterly export job transferred 6.8 TB from Blob Storage eastus to partner in West Europe. LRS\u2192GRS egress fees applied. Legitimate but budget not updated for increased data volume.",
+    "evidence": {
+      "transfer_gb": 6800,
+      "source": "eastus",
+      "dest": "westeurope",
+      "rate_per_gb": 0.02,
+      "job": "quarterly-partner-export",
+      "provider": "azure"
+    },
+    "confidence": 0.88,
+    "is_legitimate": true,
+    "created_at": {
+      "$date": "2026-03-25T10:19:00Z"
+    }
+  },
+  {
+    "provider": "azure",
+    "anomaly_id": "65f2a2b3c4d5e6f789000005",
+    "explanation": "VMSS auto-scale misconfiguration: CPU alert threshold set to >5% (should be >70%). api-backend VMSS scaled from 3 to 92 instances. Terraform apply at 07:45 UTC introduced the bug.",
+    "evidence": {
+      "vmss_name": "api-backend-vmss",
+      "scale_from": 3,
+      "scale_to": 92,
+      "vm_size": "Standard_D8s_v3",
+      "wrong_threshold": ">5%",
+      "correct_threshold": ">70%",
+      "provider": "azure"
+    },
+    "confidence": 0.98,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-26T08:17:00Z"
+    }
+  }
+]

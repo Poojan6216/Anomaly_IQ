@@ -138,6 +138,7 @@ def rolling_window_comparison(
     service: str,
     region: str,
     current_cost: float,
+    provider: str = "aws",
     threshold_multiplier: float = 2.0,
 ) -> Tuple[bool, float, float]:
     """
@@ -151,8 +152,9 @@ def rolling_window_comparison(
     week_ago_start = now - timedelta(days=7, hours=1)
     week_ago_end = now - timedelta(days=7) + timedelta(hours=1)
 
-    cursor = db["aws_billing_raw"].find(
+    cursor = db["billing_raw"].find(
         {
+            "provider": provider,
             "service": service,
             "region": region,
             "timestamp": {"$gte": week_ago_start, "$lte": week_ago_end},
@@ -181,10 +183,11 @@ def rolling_window_comparison(
 # ---------------------------------------------------------------------------
 
 
-def detect_anomalies() -> List[Dict[str, Any]]:
+def detect_anomalies(provider: str = "aws") -> List[Dict[str, Any]]:
     """
-    Run all detection methods over the most recent hour's billing data and
-    store any anomalies in MongoDB.  Returns the list of new anomaly documents.
+    Run all detection methods over the most recent hour's billing data for the
+    given cloud provider and store any anomalies in MongoDB.
+    Returns the list of new anomaly documents.
     """
     from backend.database.mongodb import get_db
     from backend.api.websocket import broadcast_anomaly_sync  # thread-safe WS bridge
@@ -193,22 +196,22 @@ def detect_anomalies() -> List[Dict[str, Any]]:
     now = datetime.now(timezone.utc)
     one_hour_ago = now - timedelta(hours=1)
 
-    # Latest snapshot (last hour)
+    # Latest snapshot (last hour) for this provider
     current_records = list(
-        db["aws_billing_raw"].find(
-            {"timestamp": {"$gte": one_hour_ago}}
+        db["billing_raw"].find(
+            {"provider": provider, "timestamp": {"$gte": one_hour_ago}}
         )
     )
 
     if not current_records:
-        logger.info("No billing records in the last hour — skipping detection.")
+        logger.info("No billing records in the last hour for provider=%s — skipping detection.", provider)
         return []
 
-    # Historical window (last 30 days)
+    # Historical window (last 30 days) for this provider
     thirty_days_ago = now - timedelta(days=30)
     historical = list(
-        db["aws_billing_raw"].find(
-            {"timestamp": {"$gte": thirty_days_ago, "$lt": one_hour_ago}}
+        db["billing_raw"].find(
+            {"provider": provider, "timestamp": {"$gte": thirty_days_ago, "$lt": one_hour_ago}}
         )
     )
 
@@ -237,7 +240,7 @@ def detect_anomalies() -> List[Dict[str, Any]]:
 
         # --- Rolling window ---
         rw_anomaly, baseline, pct_change = rolling_window_comparison(
-            service, region, current_cost
+            service, region, current_cost, provider=provider
         )
 
         # --- STL decomposition ---
@@ -270,6 +273,7 @@ def detect_anomalies() -> List[Dict[str, Any]]:
         severity = classify_severity(cost_delta, percentage_increase)
 
         anomaly_doc: Dict[str, Any] = {
+            "provider": provider,
             "timestamp": rec["timestamp"],
             "severity": severity,
             "service": service,

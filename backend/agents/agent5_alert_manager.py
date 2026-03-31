@@ -66,12 +66,14 @@ def store_alert(
     severity: str,
     channel: str,
     message: str,
+    provider: str = "aws",
 ) -> Optional[str]:
     """Persist an alert record; returns the inserted _id as string."""
     from backend.database.mongodb import get_db
 
     db = get_db()
     doc: Dict[str, Any] = {
+        "provider": provider,
         "timestamp": datetime.now(timezone.utc),
         "channel": channel,
         "anomaly_id": anomaly_id,
@@ -200,6 +202,7 @@ def send_alert(anomaly_id: str, severity: str) -> List[str]:
         logger.error("Cannot send alert — anomaly not found: %s", anomaly_id)
         return []
 
+    provider = anomaly.get("provider", "aws")
     service = anomaly.get("service", "Unknown")
     region = anomaly.get("region", "Unknown")
     cost_delta = anomaly.get("cost_delta", 0)
@@ -225,31 +228,30 @@ def send_alert(anomaly_id: str, severity: str) -> List[str]:
         if channel == "email":
             ok = send_email(_ALERT_TO_EMAIL, subject, body)
             if ok:
-                store_alert(anomaly_id, severity, "email", subject)
+                store_alert(anomaly_id, severity, "email", subject, provider=provider)
                 notified.append("email")
         elif channel == "slack":
             slack_msg = (
-                f":rotating_light: *{severity} Cost Anomaly* — {service} ({region})\n"
+                f":rotating_light: *{severity} Cost Anomaly* [{provider.upper()}] — {service} ({region})\n"
                 f"> Delta: +${cost_delta:.2f}/hr (+{pct:.1f}%)\n"
                 f"> ID: `{anomaly_id}`"
             )
             ok = send_slack(slack_msg)
             if ok:
-                store_alert(anomaly_id, severity, "slack", slack_msg)
+                store_alert(anomaly_id, severity, "slack", slack_msg, provider=provider)
                 notified.append("slack")
         elif channel == "sms":
             sms_msg = (
-                f"[AnomalyIQ] {severity} AWS Cost Anomaly\n"
+                f"[AnomalyIQ] {severity} {provider.upper()} Cost Anomaly\n"
                 f"{service} ({region}): +${cost_delta:.2f}/hr (+{pct:.1f}%)\n"
                 f"ID: {anomaly_id[-8:]}"
             )
             ok = send_sms(_ALERT_TO_PHONE, sms_msg)
             if ok:
-                store_alert(anomaly_id, severity, "sms", sms_msg)
+                store_alert(anomaly_id, severity, "sms", sms_msg, provider=provider)
                 notified.append("sms")
         elif channel == "digest":
-            # Queue for daily digest — store with channel="digest"
-            store_alert(anomaly_id, severity, "digest", body)
+            store_alert(anomaly_id, severity, "digest", body, provider=provider)
             notified.append("digest")
             logger.info("Alert queued for daily digest: anomaly %s", anomaly_id)
 

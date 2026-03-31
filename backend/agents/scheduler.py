@@ -27,27 +27,32 @@ _scheduler: BackgroundScheduler | None = None
 
 
 def _job_collect_data() -> None:
-    logger.info("[Scheduler] Starting Agent 1 — data collection.")
-    try:
-        from backend.agents.agent1_data_collector import collect_cost_data
-        records = collect_cost_data()
-        logger.info("[Scheduler] Agent 1 collected %d records.", len(records))
-    except Exception as exc:
-        logger.error("[Scheduler] Agent 1 error: %s", exc)
+    """Collect cost data for all three cloud providers."""
+    for provider, module_path in [
+        ("aws",   "backend.agents.agent1_data_collector"),
+        ("azure", "backend.agents.agent1_azure_data_collector"),
+        ("gcp",   "backend.agents.agent1_gcp_data_collector"),
+    ]:
+        logger.info("[Scheduler] Starting Agent 1 — %s data collection.", provider.upper())
+        try:
+            import importlib
+            mod = importlib.import_module(module_path)
+            records = mod.collect_cost_data()
+            logger.info("[Scheduler] Agent 1 (%s) collected %d records.", provider.upper(), len(records))
+        except Exception as exc:
+            logger.error("[Scheduler] Agent 1 (%s) error: %s", provider.upper(), exc)
 
 
 def _job_detect_anomalies() -> None:
-    logger.info("[Scheduler] Starting Agent 2 — anomaly detection.")
-    try:
-        from backend.agents.agent2_anomaly_detector import detect_anomalies
-        anomalies = detect_anomalies()
-        logger.info(
-            "[Scheduler] Agent 2 found %d new anomalies.",
-            len(anomalies),
-        )
-        # Downstream agents (3, 5, 6) are triggered inside detect_anomalies()
-    except Exception as exc:
-        logger.error("[Scheduler] Agent 2 error: %s", exc)
+    """Run anomaly detection for all three cloud providers."""
+    from backend.agents.agent2_anomaly_detector import detect_anomalies
+    for provider in ("aws", "azure", "gcp"):
+        logger.info("[Scheduler] Starting Agent 2 — anomaly detection (%s).", provider.upper())
+        try:
+            anomalies = detect_anomalies(provider=provider)
+            logger.info("[Scheduler] Agent 2 (%s) found %d new anomalies.", provider.upper(), len(anomalies))
+        except Exception as exc:
+            logger.error("[Scheduler] Agent 2 (%s) error: %s", provider.upper(), exc)
 
 
 def _job_forecast() -> None:
@@ -57,18 +62,19 @@ def _job_forecast() -> None:
         from backend.database.mongodb import get_db
 
         db = get_db()
-        top_services = db["aws_billing_raw"].distinct("service")
 
-        # Aggregate forecasts: 7-day and 30-day
-        for days in (7, 30):
-            generate_forecast(service=None, days=days)
-            for service in top_services[:10]:  # cap at 10 services
-                try:
-                    generate_forecast(service=service, days=days)
-                except Exception as exc:
-                    logger.warning(
-                        "Forecast failed for service=%s days=%d: %s", service, days, exc
-                    )
+        for provider in ("aws", "azure", "gcp"):
+            top_services = db["billing_raw"].distinct("service", {"provider": provider})
+            for days in (7, 30):
+                generate_forecast(service=None, days=days, provider=provider)
+                for service in top_services[:10]:
+                    try:
+                        generate_forecast(service=service, days=days, provider=provider)
+                    except Exception as exc:
+                        logger.warning(
+                            "Forecast failed for provider=%s service=%s days=%d: %s",
+                            provider, service, days, exc
+                        )
 
         logger.info("[Scheduler] Agent 4 forecasting complete.")
     except Exception as exc:

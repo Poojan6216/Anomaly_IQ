@@ -1,5 +1,6 @@
 """
-REST API routes for AnomalyIQ.
+REST API routes for AnomalyIQ — multi-cloud (AWS / Azure / GCP).
+Every endpoint accepts ?provider=aws|azure|gcp (default: aws).
 """
 
 from __future__ import annotations
@@ -18,14 +19,15 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/api")
 
+VALID_PROVIDERS = {"aws", "azure", "gcp"}
+
 
 # ---------------------------------------------------------------------------
-# Helper
+# Helpers
 # ---------------------------------------------------------------------------
 
 
 def _doc_id(doc: Dict) -> Dict:
-    """Convert MongoDB _id ObjectId to string for JSON serialisation."""
     if doc and "_id" in doc:
         doc["_id"] = str(doc["_id"])
     return doc
@@ -35,6 +37,13 @@ def _docs_id(docs: List[Dict]) -> List[Dict]:
     return [_doc_id(d) for d in docs]
 
 
+def _validate_provider(provider: str) -> str:
+    p = provider.lower()
+    if p not in VALID_PROVIDERS:
+        raise HTTPException(status_code=400, detail=f"Invalid provider '{provider}'. Must be one of: aws, azure, gcp.")
+    return p
+
+
 # ---------------------------------------------------------------------------
 # Health
 # ---------------------------------------------------------------------------
@@ -42,7 +51,6 @@ def _docs_id(docs: List[Dict]) -> List[Dict]:
 
 @router.get("/health")
 async def health_check() -> Dict[str, Any]:
-    """Simple health-check endpoint."""
     try:
         db = get_db()
         db.command("ping")
@@ -63,21 +71,25 @@ async def health_check() -> Dict[str, Any]:
 
 
 @router.get("/billing/current")
-async def get_current_billing() -> Dict[str, Any]:
-    """Return month-to-date total cost — matches what the AWS billing console shows."""
+async def get_current_billing(
+    provider: str = Query(default="aws"),
+) -> Dict[str, Any]:
+    """Return month-to-date total cost for a given cloud provider."""
+    provider = _validate_provider(provider)
     db = get_db()
 
     now = datetime.now(timezone.utc)
     month_start = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
 
     pipeline = [
-        {"$match": {"timestamp": {"$gte": month_start}}},
+        {"$match": {"provider": provider, "timestamp": {"$gte": month_start}}},
         {"$group": {"_id": None, "total_cost": {"$sum": "$cost"}}},
     ]
-    result = list(db["aws_billing_raw"].aggregate(pipeline))
+    result = list(db["billing_raw"].aggregate(pipeline))
     total = result[0]["total_cost"] if result else 0.0
 
     return {
+        "provider": provider,
         "month": now.strftime("%Y-%m"),
         "total_cost": round(total, 4),
         "currency": "USD",
@@ -85,13 +97,17 @@ async def get_current_billing() -> Dict[str, Any]:
 
 
 @router.get("/billing/history")
-async def get_billing_history(days: int = Query(default=7, ge=1, le=90)) -> List[Dict[str, Any]]:
+async def get_billing_history(
+    provider: str = Query(default="aws"),
+    days: int = Query(default=7, ge=1, le=90),
+) -> List[Dict[str, Any]]:
     """Return hourly cost totals for the last *days* days."""
+    provider = _validate_provider(provider)
     db = get_db()
     cutoff = datetime.now(timezone.utc) - timedelta(days=days)
 
     pipeline = [
-        {"$match": {"timestamp": {"$gte": cutoff}}},
+        {"$match": {"provider": provider, "timestamp": {"$gte": cutoff}}},
         {
             "$group": {
                 "_id": {
@@ -107,17 +123,21 @@ async def get_billing_history(days: int = Query(default=7, ge=1, le=90)) -> List
         {"$project": {"timestamp": "$_id", "total_cost": 1, "_id": 0}},
     ]
 
-    return list(db["aws_billing_raw"].aggregate(pipeline))
+    return list(db["billing_raw"].aggregate(pipeline))
 
 
 @router.get("/billing/services")
-async def get_billing_by_service(days: int = Query(default=7, ge=1, le=90)) -> List[Dict[str, Any]]:
-    """Return cost breakdown grouped by AWS service for the last *days* days."""
+async def get_billing_by_service(
+    provider: str = Query(default="aws"),
+    days: int = Query(default=7, ge=1, le=90),
+) -> List[Dict[str, Any]]:
+    """Return cost breakdown grouped by service for the last *days* days."""
+    provider = _validate_provider(provider)
     db = get_db()
     cutoff = datetime.now(timezone.utc) - timedelta(days=days)
 
     pipeline = [
-        {"$match": {"timestamp": {"$gte": cutoff}}},
+        {"$match": {"provider": provider, "timestamp": {"$gte": cutoff}}},
         {
             "$group": {
                 "_id": "$service",
@@ -129,7 +149,7 @@ async def get_billing_by_service(days: int = Query(default=7, ge=1, le=90)) -> L
         {"$project": {"service": "$_id", "total_cost": 1, "data_points": 1, "_id": 0}},
     ]
 
-    return list(db["aws_billing_raw"].aggregate(pipeline))
+    return list(db["billing_raw"].aggregate(pipeline))
 
 
 # ---------------------------------------------------------------------------
@@ -139,15 +159,16 @@ async def get_billing_by_service(days: int = Query(default=7, ge=1, le=90)) -> L
 
 @router.get("/anomalies")
 async def list_anomalies(
+    provider: str = Query(default="aws"),
     severity: Optional[str] = Query(default=None),
     status: Optional[str] = Query(default=None),
     page: int = Query(default=1, ge=1),
     page_size: int = Query(default=20, ge=1, le=100),
 ) -> Dict[str, Any]:
-    """List anomalies with optional filtering and pagination."""
+    provider = _validate_provider(provider)
     db = get_db()
 
-    query: Dict[str, Any] = {}
+    query: Dict[str, Any] = {"provider": provider}
     if severity:
         query["severity"] = severity
     if status:
@@ -174,7 +195,6 @@ async def list_anomalies(
 
 @router.get("/anomalies/{anomaly_id}")
 async def get_anomaly(anomaly_id: str) -> Dict[str, Any]:
-    """Return a single anomaly with its root-cause analysis."""
     db = get_db()
 
     try:
@@ -200,7 +220,6 @@ class FeedbackPayload(BaseModel):
 
 @router.post("/anomalies/{anomaly_id}/feedback")
 async def submit_feedback(anomaly_id: str, payload: FeedbackPayload) -> Dict[str, Any]:
-    """Record user feedback about an anomaly."""
     db = get_db()
 
     try:
@@ -220,7 +239,6 @@ async def submit_feedback(anomaly_id: str, payload: FeedbackPayload) -> Dict[str
 
     result = db["user_feedback"].insert_one(feedback_doc)
 
-    # Update anomaly status based on feedback
     new_status = "false_positive" if not payload.is_real else "acknowledged"
     db["anomalies_detected"].update_one(
         {"_id": oid},
@@ -236,10 +254,13 @@ async def submit_feedback(anomaly_id: str, payload: FeedbackPayload) -> Dict[str
 
 
 @router.get("/forecasts/latest")
-async def get_latest_forecast(service: Optional[str] = Query(default=None)) -> Dict[str, Any]:
-    """Return the most recent forecast, optionally filtered by service."""
+async def get_latest_forecast(
+    provider: str = Query(default="aws"),
+    service: Optional[str] = Query(default=None),
+) -> Dict[str, Any]:
+    provider = _validate_provider(provider)
     db = get_db()
-    query: Dict[str, Any] = {"service": service or "ALL"}
+    query: Dict[str, Any] = {"provider": provider, "service": service or "ALL"}
     forecast = db["forecasts"].find_one(query, sort=[("created_at", -1)])
     if not forecast:
         raise HTTPException(status_code=404, detail="No forecast available.")
@@ -252,6 +273,7 @@ async def get_latest_forecast(service: Optional[str] = Query(default=None)) -> D
 
 
 class BudgetPayload(BaseModel):
+    provider: str = "aws"
     budget_type: str = "monthly"
     name: str
     limit: float
@@ -261,22 +283,18 @@ class BudgetPayload(BaseModel):
 
 
 @router.get("/budgets")
-async def list_budgets() -> List[Dict[str, Any]]:
-    """Return all configured budgets."""
+async def list_budgets(provider: str = Query(default="aws")) -> List[Dict[str, Any]]:
+    provider = _validate_provider(provider)
     db = get_db()
-    return _docs_id(list(db["budgets"].find().sort("created_at", -1)))
+    return _docs_id(list(db["budgets"].find({"provider": provider}).sort("created_at", -1)))
 
 
 @router.post("/budgets", status_code=201)
 async def create_budget(payload: BudgetPayload) -> Dict[str, Any]:
-    """Create a new budget configuration."""
+    _validate_provider(payload.provider)
     db = get_db()
     now = datetime.now(timezone.utc)
-    doc = {
-        **payload.model_dump(),
-        "created_at": now,
-        "updated_at": now,
-    }
+    doc = {**payload.model_dump(), "created_at": now, "updated_at": now}
     result = db["budgets"].insert_one(doc)
     doc["_id"] = str(result.inserted_id)
     return doc
@@ -284,10 +302,6 @@ async def create_budget(payload: BudgetPayload) -> Dict[str, Any]:
 
 @router.get("/budgets/{budget_id}/forecast")
 async def get_budget_forecast(budget_id: str) -> Dict[str, Any]:
-    """
-    Return a breach probability forecast for a specific budget.
-    Uses the latest stored forecast to project spending vs the budget limit.
-    """
     from backend.agents.agent4_forecast import check_budget_breach
 
     result = check_budget_breach(budget_id)
@@ -301,7 +315,6 @@ async def get_budget_forecast(budget_id: str) -> Dict[str, Any]:
 
 @router.put("/budgets/{budget_id}")
 async def update_budget(budget_id: str, payload: BudgetPayload) -> Dict[str, Any]:
-    """Update an existing budget."""
     db = get_db()
 
     try:
@@ -326,22 +339,23 @@ async def update_budget(budget_id: str, payload: BudgetPayload) -> Dict[str, Any
 
 @router.get("/alerts")
 async def list_alerts(
+    provider: str = Query(default="aws"),
     page: int = Query(default=1, ge=1),
     page_size: int = Query(default=20, ge=1, le=100),
 ) -> Dict[str, Any]:
-    """Return recent alerts with pagination."""
+    provider = _validate_provider(provider)
     db = get_db()
-    total = db["alerts_sent"].count_documents({})
+    query = {"provider": provider}
+    total = db["alerts_sent"].count_documents(query)
     skip = (page - 1) * page_size
     docs = list(
-        db["alerts_sent"].find().sort("timestamp", -1).skip(skip).limit(page_size)
+        db["alerts_sent"].find(query).sort("timestamp", -1).skip(skip).limit(page_size)
     )
     return {"total": total, "page": page, "page_size": page_size, "items": _docs_id(docs)}
 
 
 @router.post("/alerts/{alert_id}/acknowledge")
 async def acknowledge_alert(alert_id: str) -> Dict[str, Any]:
-    """Mark an alert as acknowledged."""
     db = get_db()
 
     try:
@@ -367,11 +381,12 @@ async def acknowledge_alert(alert_id: str) -> Dict[str, Any]:
 
 @router.get("/recommendations")
 async def list_recommendations(
+    provider: str = Query(default="aws"),
     status: Optional[str] = Query(default=None),
 ) -> List[Dict[str, Any]]:
-    """Return recommendations, optionally filtered by status."""
+    provider = _validate_provider(provider)
     db = get_db()
-    query: Dict[str, Any] = {}
+    query: Dict[str, Any] = {"provider": provider}
     if status:
         query["status"] = status
     docs = list(db["recommendations"].find(query).sort("created_at", -1).limit(50))
@@ -384,22 +399,35 @@ async def list_recommendations(
 
 
 @router.post("/trigger/collect")
-async def trigger_collect() -> Dict[str, Any]:
-    """Manually trigger AWS data collection (runs synchronously so the caller knows when it's done)."""
+async def trigger_collect(provider: str = Query(default="aws")) -> Dict[str, Any]:
+    """Manually trigger data collection for a given cloud provider."""
     import asyncio
-    from backend.agents.agent1_data_collector import collect_cost_data
+    provider = _validate_provider(provider)
 
-    records = await asyncio.to_thread(collect_cost_data)
-    return {"status": "done", "job": "data_collection", "records_collected": len(records)}
+    if provider == "aws":
+        from backend.agents.agent1_data_collector import collect_cost_data
+        records = await asyncio.to_thread(collect_cost_data)
+    elif provider == "azure":
+        from backend.agents.agent1_azure_data_collector import collect_cost_data as collect_azure
+        records = await asyncio.to_thread(collect_azure)
+    else:  # gcp
+        from backend.agents.agent1_gcp_data_collector import collect_cost_data as collect_gcp
+        records = await asyncio.to_thread(collect_gcp)
+
+    return {"status": "done", "provider": provider, "job": "data_collection", "records_collected": len(records)}
 
 
 @router.post("/trigger/detect")
-async def trigger_detect(background_tasks: BackgroundTasks) -> Dict[str, str]:
-    """Manually trigger anomaly detection (runs in background)."""
+async def trigger_detect(
+    provider: str = Query(default="aws"),
+    background_tasks: BackgroundTasks = BackgroundTasks(),
+) -> Dict[str, str]:
+    """Manually trigger anomaly detection for a given cloud provider."""
+    provider = _validate_provider(provider)
 
     def _run():
         from backend.agents.agent2_anomaly_detector import detect_anomalies
-        detect_anomalies()
+        detect_anomalies(provider=provider)
 
     background_tasks.add_task(_run)
-    return {"status": "triggered", "job": "anomaly_detection"}
+    return {"status": "triggered", "provider": provider, "job": "anomaly_detection"}

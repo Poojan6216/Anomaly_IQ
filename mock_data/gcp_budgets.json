@@ -1,0 +1,94 @@
+[
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f799000000"
+    },
+    "provider": "gcp",
+    "budget_type": "monthly",
+    "name": "Total GCP Monthly Budget",
+    "limit": 5000.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": null,
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f799000001"
+    },
+    "provider": "gcp",
+    "budget_type": "monthly",
+    "name": "Compute Engine Budget",
+    "limit": 2200.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": "Compute Engine",
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f799000002"
+    },
+    "provider": "gcp",
+    "budget_type": "monthly",
+    "name": "Cloud SQL Budget",
+    "limit": 800.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": "Cloud SQL",
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f3a2b3c4d5e6f799000003"
+    },
+    "provider": "gcp",
+    "budget_type": "daily",
+    "name": "Cloud Functions Daily Budget",
+    "limit": 50.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": "Cloud Functions",
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  }
+]

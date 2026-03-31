@@ -22,16 +22,16 @@ logger = logging.getLogger(__name__)
 _ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 _MODEL = "claude-opus-4-6"
 
-_SYSTEM_PROMPT = """You are a senior AWS cost optimisation engineer.
+_SYSTEM_PROMPT = """You are a senior multi-cloud cost optimisation engineer with expertise in AWS, Azure, and GCP.
 You will receive details of a detected cost anomaly, a root-cause analysis (if available),
-and optional CloudWatch metrics for idle resources.
+and optional metrics for idle resources.
 
-Generate a JSON array of actionable recommendations.  Each recommendation must follow this schema:
+Generate a JSON array of actionable recommendations. Each recommendation must follow this schema:
 {
   "action": "<short imperative sentence — what to do>",
   "detail": "<paragraph explaining why and how>",
-  "service": "<AWS service affected>",
-  "region": "<AWS region>",
+  "service": "<cloud service affected>",
+  "region": "<cloud region>",
   "estimated_savings": <float — estimated USD saved per month>,
   "effort": "low|medium|high",
   "priority": 1–5  (1 = highest)
@@ -39,7 +39,8 @@ Generate a JSON array of actionable recommendations.  Each recommendation must f
 
 Return ONLY the JSON array, no extra prose.
 Order recommendations by priority (1 first).
-Be specific and realistic about savings estimates."""
+Be specific and realistic about savings estimates.
+Reference the correct cloud provider's terminology and services."""
 
 
 def _get_client() -> anthropic.Anthropic:
@@ -55,11 +56,10 @@ def estimate_savings(recommendation_doc: Dict[str, Any]) -> float:
 
 def generate_recommendations(anomaly_id: str) -> List[Dict[str, Any]]:
     """
-    Fetch anomaly + RCA data, gather CloudWatch idle-instance metrics,
+    Fetch anomaly + RCA data, gather idle-resource metrics (provider-aware),
     call Claude for recommendations, store and return the results.
     """
     from backend.database.mongodb import get_db
-    from backend.agents.agent1_data_collector import get_idle_ec2_instances
 
     db = get_db()
 
@@ -82,12 +82,15 @@ def generate_recommendations(anomaly_id: str) -> List[Dict[str, Any]]:
     # ------------------------------------------------------------------ #
     rca = db["root_cause_analysis"].find_one({"anomaly_id": anomaly_id})
 
+    provider = anomaly.get("provider", "aws")
+
     # ------------------------------------------------------------------ #
-    # 3. Gather idle EC2 instances (if relevant service)
+    # 3. Gather idle compute instances (AWS only — EC2)
     # ------------------------------------------------------------------ #
     idle_instances: List[str] = []
-    if "EC2" in anomaly.get("service", ""):
+    if provider == "aws" and "EC2" in anomaly.get("service", ""):
         try:
+            from backend.agents.agent1_data_collector import get_idle_ec2_instances
             idle_instances = get_idle_ec2_instances(cpu_threshold=5.0, hours=24)
         except Exception as exc:
             logger.warning("Could not fetch idle instances: %s", exc)
@@ -117,9 +120,10 @@ def generate_recommendations(anomaly_id: str) -> List[Dict[str, Any]]:
         }
 
     user_message = (
+        f"Cloud Provider: {provider.upper()}\n\n"
         f"Anomaly:\n{json.dumps(anomaly_ctx, indent=2)}\n\n"
         f"Root Cause Analysis:\n{json.dumps(rca_ctx, indent=2)}\n\n"
-        f"Idle EC2 instances (CPU < 5%): {idle_instances}\n\n"
+        f"Idle compute instances (CPU < 5%): {idle_instances}\n\n"
         "Please generate cost-optimisation recommendations as a JSON array."
     )
 
@@ -165,6 +169,7 @@ def generate_recommendations(anomaly_id: str) -> List[Dict[str, Any]]:
     stored: List[Dict[str, Any]] = []
     for item in parsed:
         rec_doc: Dict[str, Any] = {
+            "provider": provider,
             "anomaly_id": anomaly_id,
             "action": item.get("action", ""),
             "detail": item.get("detail", ""),

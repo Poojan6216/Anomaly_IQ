@@ -1,6 +1,6 @@
 """
 MongoDB connection and collection management for AnomalyIQ.
-Loads MONGODB_URI and MONGODB_DB_NAME from environment variables.
+Supports multi-cloud: AWS, Azure, GCP — all in one database, filtered by `provider`.
 """
 
 import os
@@ -27,9 +27,9 @@ db: Database | None = None
 _TTL_90_DAYS = int(timedelta(days=90).total_seconds())
 _TTL_30_DAYS = int(timedelta(days=30).total_seconds())
 
-# Collection names
+# Collection names (provider-agnostic — all clouds share one DB)
 COLLECTIONS = [
-    "aws_billing_raw",
+    "billing_raw",          # renamed from aws_billing_raw
     "anomalies_detected",
     "root_cause_analysis",
     "budgets",
@@ -47,7 +47,6 @@ def connect_db() -> None:
     client = MongoClient(MONGODB_URI, serverSelectionTimeoutMS=5_000)
 
     try:
-        # Verify connectivity
         client.admin.command("ping")
         logger.info("MongoDB connection established: %s / %s", MONGODB_URI, MONGODB_DB_NAME)
     except ConnectionFailure as exc:
@@ -77,29 +76,34 @@ def _ensure_collections_and_indexes() -> None:
             db.create_collection(name)
             logger.debug("Created collection: %s", name)
 
-    # --- aws_billing_raw: TTL 90 days ---
+    # --- billing_raw: TTL 90 days, provider-first compound lookup ---
     _safe_create_index(
-        "aws_billing_raw",
+        "billing_raw",
         [("created_at", ASCENDING)],
-        name="ttl_aws_billing_raw",
+        name="ttl_billing_raw",
         expireAfterSeconds=_TTL_90_DAYS,
     )
     _safe_create_index(
-        "aws_billing_raw",
-        [("timestamp", ASCENDING), ("service", ASCENDING), ("region", ASCENDING)],
+        "billing_raw",
+        [
+            ("provider", ASCENDING),
+            ("timestamp", ASCENDING),
+            ("service", ASCENDING),
+            ("region", ASCENDING),
+        ],
         name="billing_lookup",
     )
 
     # --- anomalies_detected ---
     _safe_create_index(
         "anomalies_detected",
-        [("timestamp", ASCENDING)],
-        name="anomaly_timestamp",
+        [("provider", ASCENDING), ("timestamp", ASCENDING)],
+        name="anomaly_provider_timestamp",
     )
     _safe_create_index(
         "anomalies_detected",
-        [("severity", ASCENDING), ("status", ASCENDING)],
-        name="anomaly_severity_status",
+        [("provider", ASCENDING), ("severity", ASCENDING), ("status", ASCENDING)],
+        name="anomaly_provider_severity_status",
     )
 
     # --- root_cause_analysis ---
@@ -119,34 +123,34 @@ def _ensure_collections_and_indexes() -> None:
     )
     _safe_create_index(
         "forecasts",
-        [("service", ASCENDING), ("forecast_date", ASCENDING)],
-        name="forecast_service_date",
+        [("provider", ASCENDING), ("service", ASCENDING), ("forecast_date", ASCENDING)],
+        name="forecast_provider_service_date",
     )
 
     # --- alerts_sent ---
     _safe_create_index(
         "alerts_sent",
-        [("anomaly_id", ASCENDING), ("timestamp", ASCENDING)],
-        name="alert_dedup",
+        [("provider", ASCENDING), ("anomaly_id", ASCENDING), ("timestamp", ASCENDING)],
+        name="alert_provider_dedup",
     )
 
     # --- recommendations ---
     _safe_create_index(
         "recommendations",
-        [("anomaly_id", ASCENDING)],
-        name="rec_anomaly_id",
+        [("provider", ASCENDING), ("anomaly_id", ASCENDING)],
+        name="rec_provider_anomaly_id",
     )
     _safe_create_index(
         "recommendations",
-        [("status", ASCENDING)],
-        name="rec_status",
+        [("provider", ASCENDING), ("status", ASCENDING)],
+        name="rec_provider_status",
     )
 
     # --- budgets ---
     _safe_create_index(
         "budgets",
-        [("budget_type", ASCENDING), ("name", ASCENDING)],
-        name="budget_type_name",
+        [("provider", ASCENDING), ("budget_type", ASCENDING), ("name", ASCENDING)],
+        name="budget_provider_type_name",
         unique=True,
     )
 
@@ -158,7 +162,6 @@ def _safe_create_index(collection_name: str, keys: list, **kwargs) -> None:
     try:
         db[collection_name].create_index(keys, **kwargs)
     except OperationFailure as exc:
-        # Index with different options already exists — log and continue.
         logger.warning(
             "Could not create index '%s' on '%s': %s",
             kwargs.get("name", "?"),

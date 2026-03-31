@@ -22,9 +22,9 @@ logger = logging.getLogger(__name__)
 _ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 _MODEL = "claude-opus-4-6"
 
-_SYSTEM_PROMPT = """You are an expert AWS cost analyst and DevOps engineer.
-You will be provided with details of a detected cloud cost anomaly, along with
-supporting evidence such as CloudTrail events and CloudWatch metrics.
+_SYSTEM_PROMPT = """You are an expert multi-cloud cost analyst and DevOps engineer with deep knowledge of AWS, Azure, and GCP.
+You will be provided with details of a detected cloud cost anomaly, along with supporting evidence
+such as audit log events and monitoring metrics.
 
 Your task is to produce a structured root-cause analysis.  Return your answer
 as valid JSON with the following keys:
@@ -36,7 +36,7 @@ as valid JSON with the following keys:
   - confidence    : float (0–1) — how confident you are in this analysis
   - evidence_used : list of strings — which evidence items were most relevant
 
-Be concise, precise, and actionable."""
+Be concise, precise, and actionable. Reference the specific cloud provider and its services correctly."""
 
 
 def _get_client() -> anthropic.Anthropic:
@@ -53,10 +53,6 @@ def analyze_anomaly(anomaly_id: str) -> Optional[Dict[str, Any]]:
     Returns the root_cause_analysis document or None on failure.
     """
     from backend.database.mongodb import get_db
-    from backend.agents.agent1_data_collector import (
-        collect_cloudtrail_events,
-        collect_cloudwatch_metrics,
-    )
 
     db = get_db()
 
@@ -74,8 +70,10 @@ def analyze_anomaly(anomaly_id: str) -> Optional[Dict[str, Any]]:
         logger.error("Anomaly not found: %s", anomaly_id)
         return None
 
+    provider = anomaly.get("provider", "aws")
+
     # ------------------------------------------------------------------ #
-    # 2. Gather evidence
+    # 2. Gather evidence (provider-specific)
     # ------------------------------------------------------------------ #
     anomaly_time: datetime = anomaly.get("timestamp", datetime.now(timezone.utc))
     if anomaly_time.tzinfo is None:
@@ -86,22 +84,27 @@ def analyze_anomaly(anomaly_id: str) -> Optional[Dict[str, Any]]:
         int((datetime.now(timezone.utc) - anomaly_time).total_seconds() / 3600) + 2,
     )
 
-    cloudtrail_events = collect_cloudtrail_events(hours=hours_lookback)
+    audit_events: list = []
+    compute_data: Dict[str, Any] = {}
 
-    # Fetch CloudWatch for any EC2 metrics related to the service
-    cloudwatch_data: Dict[str, Any] = {}
-    if "EC2" in anomaly.get("service", ""):
+    if provider == "aws":
         try:
-            from backend.agents.agent1_data_collector import get_idle_ec2_instances
-
-            idle = get_idle_ec2_instances(hours=hours_lookback)
-            cloudwatch_data["idle_instances"] = idle
+            from backend.agents.agent1_data_collector import collect_cloudtrail_events
+            audit_events = collect_cloudtrail_events(hours=hours_lookback)[:20]
         except Exception as exc:
-            logger.warning("CloudWatch fetch skipped: %s", exc)
+            logger.warning("CloudTrail fetch skipped: %s", exc)
+
+        if "EC2" in anomaly.get("service", ""):
+            try:
+                from backend.agents.agent1_data_collector import get_idle_ec2_instances
+                compute_data["idle_instances"] = get_idle_ec2_instances(hours=hours_lookback)
+            except Exception as exc:
+                logger.warning("CloudWatch fetch skipped: %s", exc)
 
     evidence = {
-        "cloudtrail_events": cloudtrail_events[:20],  # cap payload size
-        "cloudwatch_metrics": cloudwatch_data,
+        "provider": provider,
+        "audit_events": audit_events,
+        "compute_metrics": compute_data,
         "historical_baseline": anomaly.get("baseline_cost"),
         "detection_methods": anomaly.get("detection_methods", []),
     }
@@ -110,6 +113,7 @@ def analyze_anomaly(anomaly_id: str) -> Optional[Dict[str, Any]]:
     # 3. Build Claude prompt
     # ------------------------------------------------------------------ #
     anomaly_summary = {
+        "provider": provider,
         "service": anomaly.get("service"),
         "region": anomaly.get("region"),
         "severity": anomaly.get("severity"),

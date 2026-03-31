@@ -1,0 +1,109 @@
+[
+  {
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000000",
+    "explanation": "Unauthorized Compute Engine GPU instance launch: 47 n1-standard-96 instances with A100 GPUs created via compromised service account. 99.8% GPU utilization, no egress \u2014 crypto-mining pattern.",
+    "evidence": {
+      "instance_count": 47,
+      "machine_type": "n1-standard-96+GPU",
+      "principal": "sa-deploy-prod@project.iam.gserviceaccount.com",
+      "gpu_util": "99.8%",
+      "provider": "gcp"
+    },
+    "confidence": 0.97,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-15T14:12:00Z"
+    }
+  },
+  {
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000001",
+    "explanation": "Full table scan on Cloud SQL PostgreSQL 'events' table (1.8 TB) by unoptimized migration query. 3x read replica auto-scale. Query terminated at 11:15 UTC.",
+    "evidence": {
+      "query_type": "SELECT * full scan",
+      "table": "events",
+      "size_gb": 1800,
+      "replicas_added": 3,
+      "cpu_peak": "97.4%",
+      "provider": "gcp"
+    },
+    "confidence": 0.94,
+    "is_legitimate": true,
+    "created_at": {
+      "$date": "2026-03-20T09:18:00Z"
+    }
+  },
+  {
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000002",
+    "explanation": "Recursive Cloud Functions loop: process-upload triggered on its own GCS output. 168,420 invocations in 14 min. GCS trigger corrected via hotfix at 16:48 UTC.",
+    "evidence": {
+      "function": "process-upload",
+      "invocations": 168420,
+      "avg_duration_ms": 3200,
+      "trigger": "GCS ObjectFinalized (all)",
+      "provider": "gcp"
+    },
+    "confidence": 0.99,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-22T16:22:00Z"
+    }
+  },
+  {
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000003",
+    "explanation": "DDoS on /api/search routed through Cloud CDN \u2014 2.4 TB served 20:00\u201322:45 UTC. 8,400 IPs, 34 countries. Cloud Armor rate-limiting not configured for public endpoints.",
+    "evidence": {
+      "traffic_tb": 2.4,
+      "unique_ips": 8400,
+      "countries": 34,
+      "endpoint": "/api/search",
+      "armor_gap": "rate-limit unauthenticated",
+      "provider": "gcp"
+    },
+    "confidence": 0.91,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-24T20:31:00Z"
+    }
+  },
+  {
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000004",
+    "explanation": "Scheduled quarterly export: 6.8 TB transferred from Cloud Storage us-central1 to partner bucket in EU. Inter-region egress fees at $0.02/GB. Legitimate but budget not updated.",
+    "evidence": {
+      "transfer_gb": 6800,
+      "source": "us-central1",
+      "dest": "europe-west1",
+      "rate_per_gb": 0.02,
+      "job": "quarterly-partner-export",
+      "provider": "gcp"
+    },
+    "confidence": 0.88,
+    "is_legitimate": true,
+    "created_at": {
+      "$date": "2026-03-25T10:19:00Z"
+    }
+  },
+  {
+    "provider": "gcp",
+    "anomaly_id": "65f3a2b3c4d5e6f789000005",
+    "explanation": "MIG (Managed Instance Group) autoscaler misconfigured: CPU target set to 5% instead of 70%. api-backend MIG scaled from 3 to 92 n2-standard-8 instances. Terraform apply at 07:45 UTC.",
+    "evidence": {
+      "mig_name": "api-backend-mig",
+      "scale_from": 3,
+      "scale_to": 92,
+      "machine_type": "n2-standard-8",
+      "wrong_cpu_target": "5%",
+      "correct": "70%",
+      "provider": "gcp"
+    },
+    "confidence": 0.98,
+    "is_legitimate": false,
+    "created_at": {
+      "$date": "2026-03-26T08:17:00Z"
+    }
+  }
+]

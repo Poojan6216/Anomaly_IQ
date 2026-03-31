@@ -1,0 +1,94 @@
+[
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f799000000"
+    },
+    "provider": "azure",
+    "budget_type": "monthly",
+    "name": "Total AZURE Monthly Budget",
+    "limit": 5000.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": null,
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f799000001"
+    },
+    "provider": "azure",
+    "budget_type": "monthly",
+    "name": "Azure Virtual Machines Budget",
+    "limit": 2200.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": "Azure Virtual Machines",
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f799000002"
+    },
+    "provider": "azure",
+    "budget_type": "monthly",
+    "name": "Azure SQL Database Budget",
+    "limit": 800.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": "Azure SQL Database",
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-01-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-03-01T00:00:00Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "65f2a2b3c4d5e6f799000003"
+    },
+    "provider": "azure",
+    "budget_type": "daily",
+    "name": "Azure Functions Daily Budget",
+    "limit": 50.0,
+    "alert_thresholds": [
+      0.5,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "service_filter": "Azure Functions",
+    "region_filter": null,
+    "created_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    },
+    "updated_at": {
+      "$date": "2026-02-01T00:00:00Z"
+    }
+  }
+]
