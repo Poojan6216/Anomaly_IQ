@@ -2,6 +2,7 @@ import { create } from 'zustand';
 
 const useStore = create((set, get) => ({
   // ---- State ----
+  selectedProvider: 'aws',
   costData: [],
   anomalies: [],
   forecasts: null,
@@ -12,6 +13,8 @@ const useStore = create((set, get) => ({
   wsConnected: false,
 
   // ---- Actions ----
+  setSelectedProvider: (provider) => set({ selectedProvider: provider }),
+
   setCostData: (data) => set({ costData: data }),
 
   addAnomaly: (anomaly) =>

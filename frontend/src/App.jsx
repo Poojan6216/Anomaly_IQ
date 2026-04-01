@@ -37,6 +37,7 @@ const styles = {
 
 function App() {
   const {
+    selectedProvider,
     setWsConnected,
     addAnomaly,
     addAlert,
@@ -107,6 +108,12 @@ function App() {
   };
 
   const handleWsMessage = (msg) => {
+    // Filter messages by provider - only process if it matches the selected provider
+    // or if the message doesn't have a provider field (backward compatibility)
+    if (msg.payload?.provider && msg.payload.provider !== selectedProvider) {
+      return; // Ignore messages from other providers
+    }
+
     switch (msg.type) {
       case 'anomaly_detected':
         addAnomaly(msg.payload);

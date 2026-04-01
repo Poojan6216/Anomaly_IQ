@@ -101,6 +101,37 @@ const styles = {
     color: '#94a3b8',
     border: '1px solid #475569',
   },
+  tabContainer: {
+    display: 'flex',
+    gap: '8px',
+    alignItems: 'center',
+    marginRight: 'auto',
+    marginLeft: '24px',
+  },
+  tab: {
+    padding: '8px 16px',
+    borderRadius: '8px',
+    fontSize: '13px',
+    fontWeight: '600',
+    cursor: 'pointer',
+    border: '1px solid transparent',
+    transition: 'all 0.2s ease',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '6px',
+  },
+  tabActive: {
+    backgroundColor: '#334155',
+    border: '1px solid #475569',
+  },
+  tabInactive: {
+    backgroundColor: 'transparent',
+    color: '#64748b',
+  },
+  providerIcon: {
+    fontSize: '16px',
+    fontWeight: '700',
+  },
   triggerBtn: {
     padding: '6px 14px',
     borderRadius: '6px',
@@ -146,6 +177,8 @@ const styles = {
 
 function Dashboard() {
   const {
+    selectedProvider,
+    setSelectedProvider,
     costData,
     setCostData,
     anomalies,
@@ -181,14 +214,14 @@ function Dashboard() {
         alertList,
         recList,
       ] = await Promise.allSettled([
-        axios.get(`${API}/api/billing/current`),
-        axios.get(`${API}/api/billing/history?days=2`),
-        axios.get(`${API}/api/billing/services?days=7`),
-        axios.get(`${API}/api/anomalies?page=1&page_size=50`),
-        axios.get(`${API}/api/forecasts/latest`),
-        axios.get(`${API}/api/budgets`),
-        axios.get(`${API}/api/alerts?page=1&page_size=30`),
-        axios.get(`${API}/api/recommendations`),
+        axios.get(`${API}/api/billing/current?provider=${selectedProvider}`),
+        axios.get(`${API}/api/billing/history?days=2&provider=${selectedProvider}`),
+        axios.get(`${API}/api/billing/services?days=7&provider=${selectedProvider}`),
+        axios.get(`${API}/api/anomalies?page=1&page_size=50&provider=${selectedProvider}`),
+        axios.get(`${API}/api/forecasts/latest?provider=${selectedProvider}`),
+        axios.get(`${API}/api/budgets?provider=${selectedProvider}`),
+        axios.get(`${API}/api/alerts?page=1&page_size=30&provider=${selectedProvider}`),
+        axios.get(`${API}/api/recommendations?provider=${selectedProvider}`),
       ]);
 
       if (billingCurrent.status === 'fulfilled') setCurrentBilling(billingCurrent.value.data);
@@ -213,7 +246,7 @@ function Dashboard() {
     // Auto-refresh every 60 seconds
     const interval = setInterval(fetchAll, 60_000);
     return () => clearInterval(interval);
-  }, []);
+  }, [selectedProvider]);
 
   // Build a map of service -> cost for BudgetHealth
   const costByService = {};
@@ -245,19 +278,66 @@ function Dashboard() {
   const unacknowledgedAlerts = alerts.filter((a) => !a.acknowledged).length;
   const defaultBudget = budgets[0]?.limit || 1000;
 
+  // Provider configurations
+  const providerConfig = {
+    aws: {
+      name: 'AWS',
+      subtitle: 'AWS Cost Guardian',
+      icon: 'A',
+      color: '#3b82f6',
+    },
+    azure: {
+      name: 'Azure',
+      subtitle: 'Azure Cost Guardian',
+      icon: 'Az',
+      color: '#0078d4',
+    },
+    gcp: {
+      name: 'GCP',
+      subtitle: 'GCP Cost Guardian',
+      icon: 'G',
+      color: '#ea4335',
+    },
+  };
+
+  const currentProvider = providerConfig[selectedProvider];
+
   return (
     <div style={styles.page}>
       {/* Header */}
       <div style={styles.header}>
         <div style={styles.logo}>
           <div style={styles.logoIcon}>
-            <span style={{ color: '#fff', fontSize: '16px' }}>A</span>
+            <span style={{ color: '#fff', fontSize: '16px' }}>{currentProvider.icon}</span>
           </div>
           <div>
             <div style={styles.logoText}>AnomalyIQ</div>
-            <div style={styles.subtitle}>AWS Cost Guardian</div>
+            <div style={styles.subtitle}>{currentProvider.subtitle}</div>
           </div>
         </div>
+        
+        {/* Provider Tabs */}
+        <div style={styles.tabContainer}>
+          {Object.entries(providerConfig).map(([key, config]) => (
+            <div
+              key={key}
+              style={{
+                ...styles.tab,
+                ...(selectedProvider === key ? styles.tabActive : styles.tabInactive),
+              }}
+              onClick={() => setSelectedProvider(key)}
+            >
+              <span style={{ 
+                ...styles.providerIcon, 
+                color: selectedProvider === key ? config.color : '#64748b' 
+              }}>
+                {config.icon}
+              </span>
+              <span>{config.name}</span>
+            </div>
+          ))}
+        </div>
+
         <div style={styles.headerRight}>
           <span style={styles.wsLabel}>
             <span
