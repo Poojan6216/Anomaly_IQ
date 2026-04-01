@@ -100,10 +100,12 @@ app.add_middleware(
 # Routers
 # ---------------------------------------------------------------------------
 
-from backend.api.routes import router as api_router      # noqa: E402
-from backend.api.websocket import router as ws_router    # noqa: E402
+from backend.api.routes import router as api_router        # noqa: E402
+from backend.api.gcp_routes import router as gcp_router    # noqa: E402
+from backend.api.websocket import router as ws_router      # noqa: E402
 
 app.include_router(api_router)
+app.include_router(gcp_router)
 app.include_router(ws_router)
 
 

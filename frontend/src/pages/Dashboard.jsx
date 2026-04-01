@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import useStore from '../store/store';
 import CostMeter from '../components/CostMeter';
@@ -114,6 +115,20 @@ const styles = {
     color: '#64748b',
     fontStyle: 'italic',
   },
+  backBtn: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '6px',
+    padding: '6px 14px',
+    borderRadius: '8px',
+    border: '1px solid #334155',
+    backgroundColor: 'transparent',
+    color: '#94a3b8',
+    fontSize: '13px',
+    fontWeight: '500',
+    cursor: 'pointer',
+    marginRight: '8px',
+  },
   main: {
     padding: '20px 24px',
     display: 'flex',
@@ -145,6 +160,7 @@ const styles = {
 };
 
 function Dashboard() {
+  const navigate = useNavigate();
   const {
     costData,
     setCostData,
@@ -249,6 +265,9 @@ function Dashboard() {
     <div style={styles.page}>
       {/* Header */}
       <div style={styles.header}>
+        <button style={styles.backBtn} onClick={() => navigate('/')}>
+          &larr; Back
+        </button>
         <div style={styles.logo}>
           <div style={styles.logoIcon}>
             <span style={{ color: '#fff', fontSize: '16px' }}>A</span>

@@ -37,6 +37,12 @@ COLLECTIONS = [
     "alerts_sent",
     "recommendations",
     "user_feedback",
+    "gcp_billing_raw",
+    "gcp_anomalies_detected",
+    "gcp_forecasts",
+    "gcp_budgets",
+    "gcp_alerts_sent",
+    "gcp_recommendations",
 ]
 
 
@@ -148,6 +154,35 @@ def _ensure_collections_and_indexes() -> None:
         [("budget_type", ASCENDING), ("name", ASCENDING)],
         name="budget_type_name",
         unique=True,
+    )
+
+    # --- GCP collections ---
+    _safe_create_index(
+        "gcp_billing_raw",
+        [("created_at", ASCENDING)],
+        name="ttl_gcp_billing_raw",
+        expireAfterSeconds=_TTL_90_DAYS,
+    )
+    _safe_create_index(
+        "gcp_billing_raw",
+        [("timestamp", ASCENDING), ("service", ASCENDING), ("region", ASCENDING)],
+        name="gcp_billing_lookup",
+    )
+    _safe_create_index(
+        "gcp_anomalies_detected",
+        [("timestamp", ASCENDING)],
+        name="gcp_anomaly_timestamp",
+    )
+    _safe_create_index(
+        "gcp_forecasts",
+        [("created_at", ASCENDING)],
+        name="ttl_gcp_forecasts",
+        expireAfterSeconds=_TTL_30_DAYS,
+    )
+    _safe_create_index(
+        "gcp_alerts_sent",
+        [("anomaly_id", ASCENDING), ("timestamp", ASCENDING)],
+        name="gcp_alert_dedup",
     )
 
     logger.info("MongoDB indexes verified / created.")

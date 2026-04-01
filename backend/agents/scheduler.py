@@ -128,6 +128,45 @@ def _job_budget_breach_check() -> None:
         logger.error("[Scheduler] Budget breach check error: %s", exc)
 
 
+def _job_gcp_collect_data() -> None:
+    logger.info("[Scheduler] Starting GCP Agent 1 — data collection.")
+    try:
+        from backend.agents.agent1_gcp_data_collector import collect_gcp_cost_data
+        records = collect_gcp_cost_data()
+        logger.info("[Scheduler] GCP Agent 1 collected %d records.", len(records))
+    except Exception as exc:
+        logger.error("[Scheduler] GCP Agent 1 error: %s", exc)
+
+
+def _job_gcp_detect_anomalies() -> None:
+    logger.info("[Scheduler] Starting GCP Agent 2 — anomaly detection.")
+    try:
+        from backend.agents.agent2_gcp_anomaly_detector import detect_gcp_anomalies
+        anomalies = detect_gcp_anomalies()
+        logger.info("[Scheduler] GCP Agent 2 found %d new anomalies.", len(anomalies))
+    except Exception as exc:
+        logger.error("[Scheduler] GCP Agent 2 error: %s", exc)
+
+
+def _job_gcp_forecast() -> None:
+    logger.info("[Scheduler] Starting GCP Agent 4 — forecasting.")
+    try:
+        from backend.agents.agent4_gcp_forecast import generate_gcp_forecast
+        from backend.database.mongodb import get_db
+        db = get_db()
+        top_services = db["gcp_billing_raw"].distinct("service")
+        for days in (7, 30):
+            generate_gcp_forecast(service=None, days=days)
+            for service in top_services[:10]:
+                try:
+                    generate_gcp_forecast(service=service, days=days)
+                except Exception as exc:
+                    logger.warning("GCP forecast failed for %s: %s", service, exc)
+        logger.info("[Scheduler] GCP forecasting complete.")
+    except Exception as exc:
+        logger.error("[Scheduler] GCP Agent 4 error: %s", exc)
+
+
 def _job_daily_digest() -> None:
     logger.info("[Scheduler] Sending daily alert digest.")
     try:
@@ -206,6 +245,40 @@ def start_scheduler() -> BackgroundScheduler:
         trigger=IntervalTrigger(hours=6),
         id="agent4_budget_breach",
         name="Budget Breach Check",
+        replace_existing=True,
+        max_instances=1,
+        misfire_grace_time=600,
+    )
+
+    # GCP Agent 1: collect cost data every 15 minutes
+    _scheduler.add_job(
+        _job_gcp_collect_data,
+        trigger=IntervalTrigger(minutes=15),
+        id="gcp_agent1_collect",
+        name="GCP Cost Data Collection",
+        replace_existing=True,
+        max_instances=1,
+        misfire_grace_time=120,
+        next_run_time=datetime.now(timezone.utc),
+    )
+
+    # GCP Agent 2: detect anomalies every 15 minutes (offset 3 min)
+    _scheduler.add_job(
+        _job_gcp_detect_anomalies,
+        trigger=IntervalTrigger(minutes=15, start_date=_start_offset(minutes=3)),
+        id="gcp_agent2_detect",
+        name="GCP Anomaly Detection",
+        replace_existing=True,
+        max_instances=1,
+        misfire_grace_time=120,
+    )
+
+    # GCP Agent 4: daily forecast at 06:15 UTC
+    _scheduler.add_job(
+        _job_gcp_forecast,
+        trigger=CronTrigger(hour=6, minute=15, timezone="UTC"),
+        id="gcp_agent4_forecast",
+        name="GCP Daily Forecast",
         replace_existing=True,
         max_instances=1,
         misfire_grace_time=600,

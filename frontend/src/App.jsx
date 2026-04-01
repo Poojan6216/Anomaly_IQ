@@ -1,6 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import useStore from './store/store';
+import CloudSelector from './pages/CloudSelector';
 import Dashboard from './pages/Dashboard';
+import AzureDashboard from './pages/AzureDashboard';
+import GcpDashboard from './pages/GcpDashboard';
 
 const WS_URL = 'ws://localhost:8000/ws';
 
@@ -159,9 +163,16 @@ function App() {
   }
 
   return (
-    <div style={styles.app}>
-      <Dashboard />
-    </div>
+    <BrowserRouter>
+      <div style={styles.app}>
+        <Routes>
+          <Route path="/" element={<CloudSelector />} />
+          <Route path="/dashboard/aws" element={<Dashboard />} />
+          <Route path="/dashboard/azure" element={<AzureDashboard />} />
+          <Route path="/dashboard/gcp" element={<GcpDashboard />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
