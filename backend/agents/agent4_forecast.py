@@ -276,9 +276,9 @@ def check_budget_breach(budget_id: str) -> Optional[Dict[str, Any]]:
     # Current spend (sum of billing data this month)
     month_start = datetime.now(timezone.utc).replace(day=1, hour=0, minute=0, second=0, microsecond=0)
     agg = list(
-        db["aws_billing_raw"].aggregate(
+        db["billing_raw"].aggregate(
             [
-                {"$match": {"timestamp": {"$gte": month_start}}},
+                {"$match": {"provider": provider, "timestamp": {"$gte": month_start}}},
                 {"$group": {"_id": None, "total": {"$sum": "$cost"}}},
             ]
         )

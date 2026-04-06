@@ -16,10 +16,10 @@
     "service_filter": null,
     "region_filter": null,
     "created_at": {
-      "$date": "2026-01-01T00:00:00Z"
+      "$date": "2026-01-08T00:00:00Z"
     },
     "updated_at": {
-      "$date": "2026-03-01T00:00:00Z"
+      "$date": "2026-03-08T00:00:00Z"
     }
   },
   {
@@ -39,10 +39,10 @@
     "service_filter": "Compute Engine",
     "region_filter": null,
     "created_at": {
-      "$date": "2026-01-01T00:00:00Z"
+      "$date": "2026-01-08T00:00:00Z"
     },
     "updated_at": {
-      "$date": "2026-03-01T00:00:00Z"
+      "$date": "2026-03-08T00:00:00Z"
     }
   },
   {
@@ -62,10 +62,10 @@
     "service_filter": "Cloud SQL",
     "region_filter": null,
     "created_at": {
-      "$date": "2026-01-01T00:00:00Z"
+      "$date": "2026-01-08T00:00:00Z"
     },
     "updated_at": {
-      "$date": "2026-03-01T00:00:00Z"
+      "$date": "2026-03-08T00:00:00Z"
     }
   },
   {
@@ -85,10 +85,10 @@
     "service_filter": "Cloud Functions",
     "region_filter": null,
     "created_at": {
-      "$date": "2026-02-01T00:00:00Z"
+      "$date": "2026-02-08T00:00:00Z"
     },
     "updated_at": {
-      "$date": "2026-02-01T00:00:00Z"
+      "$date": "2026-02-08T00:00:00Z"
     }
   }
 ]

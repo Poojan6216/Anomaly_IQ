@@ -20,7 +20,7 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 _ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
-_MODEL = "claude-opus-4-6"
+_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-opus-4-6")
 
 _SYSTEM_PROMPT = """You are an expert multi-cloud cost analyst and DevOps engineer with deep knowledge of AWS, Azure, and GCP.
 You will be provided with details of a detected cloud cost anomaly, along with supporting evidence

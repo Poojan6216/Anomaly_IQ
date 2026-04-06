@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import useStore from './store/store';
 import Dashboard from './pages/Dashboard';
 
-const WS_URL = 'ws://localhost:8000/ws';
+const WS_URL = import.meta.env.VITE_WS_URL ?? 'ws://localhost:8000/ws';
 
 // Exponential backoff: 1s → 2s → 4s → 8s → 16s → 30s (capped)
 const BACKOFF_BASE_MS = 1_000;

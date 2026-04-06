@@ -5,7 +5,7 @@
     "is_real": true,
     "comment": "Confirmed \u2014 unauthorized VMs. Security team engaged, service principal revoked.",
     "submitted_at": {
-      "$date": "2026-03-15T15:10:00Z"
+      "$date": "2026-03-22T15:10:00Z"
     }
   },
   {
@@ -14,7 +14,7 @@
     "is_real": true,
     "comment": "Legitimate but unplanned \u2014 bad query in migration job. Fixed.",
     "submitted_at": {
-      "$date": "2026-03-20T12:30:00Z"
+      "$date": "2026-03-27T12:30:00Z"
     }
   },
   {
@@ -23,7 +23,7 @@
     "is_real": true,
     "comment": "Recursive function bug \u2014 hotfix deployed.",
     "submitted_at": {
-      "$date": "2026-03-22T18:00:00Z"
+      "$date": "2026-03-29T18:00:00Z"
     }
   }
 ]
