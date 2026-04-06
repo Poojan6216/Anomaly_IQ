@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
+import useStore from '../store/store';
 
-const API = 'http://localhost:8000';
+const API = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
 
 const styles = {
   card: {
@@ -91,6 +92,7 @@ function getBreachStyle(prob) {
 }
 
 function BudgetHealth({ budgets = [], currentCostByService = {} }) {
+  const { selectedProvider } = useStore();
   const [forecasts, setForecasts] = useState({});
 
   useEffect(() => {
@@ -98,7 +100,7 @@ function BudgetHealth({ budgets = [], currentCostByService = {} }) {
 
     budgets.forEach((budget) => {
       if (!budget._id) return;
-      fetch(`${API}/api/budgets/${budget._id}/forecast`)
+      fetch(`${API}/api/budgets/${budget._id}/forecast?provider=${selectedProvider}`)
         .then((r) => (r.ok ? r.json() : null))
         .then((data) => {
           if (data) {

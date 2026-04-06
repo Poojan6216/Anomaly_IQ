@@ -194,7 +194,11 @@ async def list_anomalies(
 
 
 @router.get("/anomalies/{anomaly_id}")
-async def get_anomaly(anomaly_id: str) -> Dict[str, Any]:
+async def get_anomaly(
+    anomaly_id: str,
+    provider: str = Query(default="aws"),
+) -> Dict[str, Any]:
+    provider = _validate_provider(provider)
     db = get_db()
 
     try:
@@ -202,7 +206,7 @@ async def get_anomaly(anomaly_id: str) -> Dict[str, Any]:
     except Exception:
         raise HTTPException(status_code=400, detail="Invalid anomaly ID.")
 
-    anomaly = db["anomalies_detected"].find_one({"_id": oid})
+    anomaly = db["anomalies_detected"].find_one({"_id": oid, "provider": provider})
     if not anomaly:
         raise HTTPException(status_code=404, detail="Anomaly not found.")
 
@@ -355,7 +359,11 @@ async def list_alerts(
 
 
 @router.post("/alerts/{alert_id}/acknowledge")
-async def acknowledge_alert(alert_id: str) -> Dict[str, Any]:
+async def acknowledge_alert(
+    alert_id: str,
+    provider: str = Query(default="aws"),
+) -> Dict[str, Any]:
+    provider = _validate_provider(provider)
     db = get_db()
 
     try:
@@ -364,7 +372,7 @@ async def acknowledge_alert(alert_id: str) -> Dict[str, Any]:
         raise HTTPException(status_code=400, detail="Invalid alert ID.")
 
     result = db["alerts_sent"].update_one(
-        {"_id": oid},
+        {"_id": oid, "provider": provider},
         {"$set": {"acknowledged": True, "acknowledged_at": datetime.now(timezone.utc)}},
     )
 

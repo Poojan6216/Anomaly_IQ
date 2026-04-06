@@ -23,6 +23,7 @@ logger = logging.getLogger(__name__)
 
 _SES_FROM_EMAIL: str = os.environ.get("SES_FROM_EMAIL", "")
 _SES_REGION: str = os.environ.get("SES_REGION", "us-east-2")
+_FRONTEND_URL: str = os.environ.get("FRONTEND_URL", "http://localhost:5173")
 _SLACK_WEBHOOK_URL: str = os.environ.get("SLACK_WEBHOOK_URL", "")
 _ALERT_TO_EMAIL: str = os.environ.get("ALERT_TO_EMAIL", _SES_FROM_EMAIL)
 
@@ -218,7 +219,7 @@ def send_alert(anomaly_id: str, severity: str) -> List[str]:
         f"  Current   : ${actual:.2f}/hr\n"
         f"  Delta     : +${cost_delta:.2f}/hr (+{pct:.1f}%)\n"
         f"  Anomaly ID: {anomaly_id}\n\n"
-        f"Please review at http://localhost:3000 and investigate the cause.\n"
+        f"Please review at {_FRONTEND_URL} and investigate the cause.\n"
     )
 
     channels = _SEVERITY_CHANNELS.get(severity, ["email"])

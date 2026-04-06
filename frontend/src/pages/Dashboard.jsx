@@ -9,7 +9,7 @@ import BudgetHealth from '../components/BudgetHealth';
 import AlertFeed from '../components/AlertFeed';
 import RecommendationCards from '../components/RecommendationCards';
 
-const API = 'http://localhost:8000';
+const API = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
 
 const styles = {
   page: {
@@ -215,8 +215,8 @@ function Dashboard() {
         recList,
       ] = await Promise.allSettled([
         axios.get(`${API}/api/billing/current?provider=${selectedProvider}`),
-        axios.get(`${API}/api/billing/history?days=2&provider=${selectedProvider}`),
-        axios.get(`${API}/api/billing/services?days=7&provider=${selectedProvider}`),
+        axios.get(`${API}/api/billing/history?days=30&provider=${selectedProvider}`),
+        axios.get(`${API}/api/billing/services?days=30&provider=${selectedProvider}`),
         axios.get(`${API}/api/anomalies?page=1&page_size=50&provider=${selectedProvider}`),
         axios.get(`${API}/api/forecasts/latest?provider=${selectedProvider}`),
         axios.get(`${API}/api/budgets?provider=${selectedProvider}`),

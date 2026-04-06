@@ -1,7 +1,7 @@
 import axios from 'axios';
 import useStore from '../store/store';
 
-const API = 'http://localhost:8000';
+const API = import.meta.env.VITE_API_URL ?? 'http://localhost:8000';
 
 const SEVERITY_COLORS = {
   Critical: { bg: '#7f1d1d', text: '#fca5a5', border: '#991b1b' },
@@ -79,11 +79,11 @@ const styles = {
 };
 
 function AlertFeed({ alerts = [] }) {
-  const { acknowledgeAlert } = useStore();
+  const { acknowledgeAlert, selectedProvider } = useStore();
 
   const handleAck = async (alertId) => {
     try {
-      await axios.post(`${API}/api/alerts/${alertId}/acknowledge`);
+      await axios.post(`${API}/api/alerts/${alertId}/acknowledge?provider=${selectedProvider}`);
       acknowledgeAlert(alertId);
     } catch {
       // Acknowledge optimistically

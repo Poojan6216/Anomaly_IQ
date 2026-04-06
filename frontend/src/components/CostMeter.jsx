@@ -121,7 +121,7 @@ function CostMeter({ currentSpend = 0, budget = 1000 }) {
         </div>
         <div style={styles.metaItem}>
           <div style={styles.metaVal}>${budget.toFixed(2)}</div>
-          <div style={styles.metaLabel}>Daily Budget</div>
+          <div style={styles.metaLabel}>Monthly Budget</div>
         </div>
         <div style={styles.metaItem}>
           <div style={{ ...styles.metaVal, color: '#22c55e' }}>
