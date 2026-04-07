@@ -402,6 +402,147 @@ async def list_recommendations(
 
 
 # ---------------------------------------------------------------------------
+# Billing — Yearly Comparison & Service Month-over-Month
+# ---------------------------------------------------------------------------
+
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+_MOCK_YEARLY: Dict[str, Dict] = {
+    "aws": {
+        "year_2025": [950, 890, 1020, 1100, 980, 1150, 1200, 1180, 1090, 1250, 1380, 1450],
+        "year_2026": [1380, 1420, 1510, None, None, None, None, None, None, None, None, None],
+    },
+    "azure": {
+        "year_2025": [420, 380, 450, 490, 440, 510, 540, 530, 480, 560, 620, 680],
+        "year_2026": [650, 680, 720, None, None, None, None, None, None, None, None, None],
+    },
+    "gcp": {
+        "year_2025": [210, 190, 240, 260, 230, 280, 310, 290, 260, 320, 360, 390],
+        "year_2026": [370, 390, 420, None, None, None, None, None, None, None, None, None],
+    },
+}
+
+_MOCK_SERVICES: Dict[str, Dict] = {
+    "aws": {
+        "services": ["EC2", "S3", "RDS", "Lambda", "CloudFront", "EKS", "DynamoDB", "Redshift"],
+        "current_month":  [420, 85, 180, 45, 62, 230, 95, 145],
+        "previous_month": [380, 92, 165, 38, 58, 210, 88, 130],
+    },
+    "azure": {
+        "services": ["Virtual Machines", "Storage Account", "SQL Database", "App Service", "Azure DevOps", "AKS"],
+        "current_month":  [280, 65, 120, 85, 45, 95],
+        "previous_month": [255, 72, 108, 78, 42, 88],
+    },
+    "gcp": {
+        "services": ["Compute Engine", "Cloud Storage", "BigQuery", "Cloud Run", "Cloud SQL", "Kubernetes Engine"],
+        "current_month":  [155, 38, 65, 48, 72, 95],
+        "previous_month": [140, 42, 58, 45, 68, 88],
+    },
+}
+
+
+@router.get("/billing/yearly-comparison")
+async def get_yearly_comparison(
+    provider: str = Query(default="aws"),
+) -> Dict[str, Any]:
+    """Monthly cost totals for 2025 and 2026 (Jan–Mar) for year-over-year comparison.
+    Uses real data from billing_raw where available, fills gaps with mock data."""
+    provider = _validate_provider(provider)
+    db = get_db()
+    mock = _MOCK_YEARLY[provider]
+
+    pipeline = [
+        {
+            "$match": {
+                "provider": provider,
+                "timestamp": {
+                    "$gte": datetime(2025, 1, 1, tzinfo=timezone.utc),
+                    "$lt":  datetime(2027, 1, 1, tzinfo=timezone.utc),
+                },
+            }
+        },
+        {
+            "$group": {
+                "_id": {
+                    "year":  {"$year": "$timestamp"},
+                    "month": {"$month": "$timestamp"},
+                },
+                "total_cost": {"$sum": "$cost"},
+            }
+        },
+        {"$sort": {"_id.year": 1, "_id.month": 1}},
+    ]
+
+    real_lookup: Dict[tuple, float] = {
+        (r["_id"]["year"], r["_id"]["month"]): round(r["total_cost"], 2)
+        for r in db["billing_raw"].aggregate(pipeline)
+    }
+
+    year_2025, year_2026 = [], []
+    for m in range(1, 13):
+        year_2025.append(real_lookup.get((2025, m)) if (2025, m) in real_lookup else mock["year_2025"][m - 1])
+        year_2026.append(real_lookup.get((2026, m)) if (2026, m) in real_lookup else mock["year_2026"][m - 1])
+
+    return {
+        "provider": provider,
+        "months": MONTHS,
+        "year_2025": year_2025,
+        "year_2026": year_2026,
+    }
+
+
+@router.get("/billing/service-comparison")
+async def get_service_comparison(
+    provider: str = Query(default="aws"),
+) -> Dict[str, Any]:
+    """Current month vs previous month cost per service.
+    Uses real data from billing_raw where available, falls back to mock."""
+    provider = _validate_provider(provider)
+    db = get_db()
+    mock = _MOCK_SERVICES[provider]
+
+    now = datetime.now(timezone.utc)
+    current_start = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+    prev_end      = current_start
+    prev_start    = (current_start - timedelta(days=1)).replace(
+        day=1, hour=0, minute=0, second=0, microsecond=0
+    )
+
+    def _service_costs(start: datetime, end: datetime) -> Dict[str, float]:
+        pipeline = [
+            {"$match": {"provider": provider, "timestamp": {"$gte": start, "$lt": end}}},
+            {"$group": {"_id": "$service", "total_cost": {"$sum": "$cost"}}},
+            {"$sort": {"total_cost": -1}},
+        ]
+        return {r["_id"]: round(r["total_cost"], 2) for r in db["billing_raw"].aggregate(pipeline)}
+
+    current_costs = _service_costs(current_start, now)
+    prev_costs    = _service_costs(prev_start, prev_end)
+
+    if current_costs or prev_costs:
+        services = sorted(
+            set(list(current_costs.keys()) + list(prev_costs.keys())),
+            key=lambda s: current_costs.get(s, 0),
+            reverse=True,
+        )[:8]
+        current_month  = [current_costs.get(s, 0) for s in services]
+        previous_month = [prev_costs.get(s, 0) for s in services]
+    else:
+        services       = mock["services"][:8]
+        current_month  = mock["current_month"][:8]
+        previous_month = mock["previous_month"][:8]
+
+    return {
+        "provider": provider,
+        "services": services,
+        "current_month":  current_month,
+        "previous_month": previous_month,
+        "current_label":  now.strftime("%b %Y"),
+        "previous_label": prev_start.strftime("%b %Y"),
+    }
+
+
+# ---------------------------------------------------------------------------
 # Manual triggers
 # ---------------------------------------------------------------------------
 

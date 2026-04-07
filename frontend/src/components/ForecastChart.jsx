@@ -8,54 +8,21 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
+import useStore, { getTheme } from '../store/store';
 
-const styles = {
-  card: {
-    backgroundColor: '#1e293b',
-    borderRadius: '12px',
-    padding: '20px',
-    border: '1px solid #334155',
-  },
-  title: {
-    fontSize: '14px',
-    fontWeight: '600',
-    color: '#94a3b8',
-    textTransform: 'uppercase',
-    letterSpacing: '0.05em',
-    marginBottom: '4px',
-  },
-  modelBadge: {
-    display: 'inline-block',
-    fontSize: '11px',
-    backgroundColor: '#0f172a',
-    color: '#64748b',
-    borderRadius: '4px',
-    padding: '2px 6px',
-    marginBottom: '12px',
-  },
-  empty: {
-    textAlign: 'center',
-    color: '#475569',
-    padding: '40px 0',
-    fontSize: '14px',
-  },
-};
-
-const CustomTooltip = ({ active, payload, label }) => {
+const CustomTooltip = ({ active, payload, label, t }) => {
   if (!active || !payload?.length) return null;
   return (
-    <div
-      style={{
-        backgroundColor: '#0f172a',
-        border: '1px solid #334155',
-        borderRadius: '8px',
-        padding: '10px 14px',
-        fontSize: '13px',
-      }}
-    >
-      <div style={{ color: '#94a3b8', marginBottom: '6px' }}>{label}</div>
+    <div style={{
+      backgroundColor: t.tooltipBg,
+      border: `1px solid ${t.border}`,
+      borderRadius: '8px',
+      padding: '10px 14px',
+      fontSize: '13px',
+    }}>
+      <div style={{ color: t.textSecondary, marginBottom: '6px' }}>{label}</div>
       {payload.map((p, i) => (
-        <div key={i} style={{ color: p.color || '#f1f5f9', marginBottom: '2px' }}>
+        <div key={i} style={{ color: p.color || t.textPrimary, marginBottom: '2px' }}>
           {p.name}: <strong>${Number(p.value || 0).toFixed(4)}</strong>
         </div>
       ))}
@@ -64,6 +31,41 @@ const CustomTooltip = ({ active, payload, label }) => {
 };
 
 function ForecastChart({ forecasts = null }) {
+  const { theme } = useStore();
+  const t = getTheme(theme);
+
+  const styles = {
+    card: {
+      backgroundColor: t.cardBg,
+      borderRadius: '12px',
+      padding: '20px',
+      border: `1px solid ${t.border}`,
+    },
+    title: {
+      fontSize: '14px',
+      fontWeight: '600',
+      color: t.textSecondary,
+      textTransform: 'uppercase',
+      letterSpacing: '0.05em',
+      marginBottom: '4px',
+    },
+    modelBadge: {
+      display: 'inline-block',
+      fontSize: '11px',
+      backgroundColor: t.cardInnerBg,
+      color: t.textMuted,
+      borderRadius: '4px',
+      padding: '2px 6px',
+      marginBottom: '12px',
+    },
+    empty: {
+      textAlign: 'center',
+      color: t.textDimmer,
+      padding: '40px 0',
+      fontSize: '14px',
+    },
+  };
+
   if (!forecasts?.predictions?.length) {
     return (
       <div style={styles.card}>
@@ -73,7 +75,6 @@ function ForecastChart({ forecasts = null }) {
     );
   }
 
-  // Sample to max 120 points for performance
   const preds = forecasts.predictions;
   const step = Math.max(1, Math.floor(preds.length / 120));
   const sampled = preds.filter((_, i) => i % step === 0);
@@ -85,7 +86,6 @@ function ForecastChart({ forecasts = null }) {
     predicted: Math.max(0, p.yhat),
     lower: Math.max(0, p.yhat_lower),
     upper: Math.max(0, p.yhat_upper),
-    range: [Math.max(0, p.yhat_lower), Math.max(0, p.yhat_upper)],
   }));
 
   return (
@@ -107,24 +107,23 @@ function ForecastChart({ forecasts = null }) {
               <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
             </linearGradient>
           </defs>
-          <CartesianGrid strokeDasharray="3 3" stroke="#1e293b" />
+          <CartesianGrid strokeDasharray="3 3" stroke={t.gridLine} />
           <XAxis
             dataKey="date"
-            tick={{ fill: '#64748b', fontSize: 11 }}
+            tick={{ fill: t.textMuted, fontSize: 11 }}
             tickLine={false}
-            axisLine={{ stroke: '#334155' }}
+            axisLine={{ stroke: t.gridAxis }}
             interval="preserveStartEnd"
           />
           <YAxis
-            tick={{ fill: '#64748b', fontSize: 11 }}
+            tick={{ fill: t.textMuted, fontSize: 11 }}
             tickLine={false}
-            axisLine={{ stroke: '#334155' }}
+            axisLine={{ stroke: t.gridAxis }}
             tickFormatter={(v) => `$${v.toFixed(2)}`}
             width={65}
           />
-          <Tooltip content={<CustomTooltip />} />
-          <Legend wrapperStyle={{ fontSize: '12px', color: '#94a3b8' }} />
-          {/* Confidence band: upper */}
+          <Tooltip content={<CustomTooltip t={t} />} />
+          <Legend wrapperStyle={{ fontSize: '12px', color: t.textSecondary }} />
           <Area
             type="monotone"
             dataKey="upper"
@@ -133,16 +132,14 @@ function ForecastChart({ forecasts = null }) {
             name="Upper bound"
             legendType="none"
           />
-          {/* Confidence band: lower */}
           <Area
             type="monotone"
             dataKey="lower"
             stroke="none"
-            fill="#0f172a"
+            fill={t.pageBg}
             name="Lower bound"
             legendType="none"
           />
-          {/* Predicted line */}
           <Area
             type="monotone"
             dataKey="predicted"
