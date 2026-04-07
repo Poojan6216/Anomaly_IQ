@@ -5,62 +5,7 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from 'recharts';
-
-const styles = {
-  card: {
-    backgroundColor: '#1e293b',
-    borderRadius: '12px',
-    padding: '20px',
-    border: '1px solid #334155',
-  },
-  title: {
-    fontSize: '14px',
-    fontWeight: '600',
-    color: '#94a3b8',
-    textTransform: 'uppercase',
-    letterSpacing: '0.05em',
-    marginBottom: '16px',
-  },
-  centerLabel: {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    textAlign: 'center',
-    pointerEvents: 'none',
-  },
-  amount: {
-    fontSize: '24px',
-    fontWeight: '700',
-    color: '#f1f5f9',
-  },
-  sub: {
-    fontSize: '12px',
-    color: '#94a3b8',
-  },
-  chartWrap: {
-    position: 'relative',
-    width: '100%',
-    height: '200px',
-  },
-  meta: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginTop: '12px',
-  },
-  metaItem: {
-    textAlign: 'center',
-  },
-  metaVal: {
-    fontSize: '18px',
-    fontWeight: '700',
-    color: '#f1f5f9',
-  },
-  metaLabel: {
-    fontSize: '11px',
-    color: '#64748b',
-  },
-};
+import useStore, { getTheme } from '../store/store';
 
 function getColor(pct) {
   if (pct >= 90) return '#ef4444';
@@ -69,10 +14,68 @@ function getColor(pct) {
 }
 
 function CostMeter({ currentSpend = 0, budget = 1000 }) {
+  const { theme } = useStore();
+  const t = getTheme(theme);
+
   const pct = budget > 0 ? Math.min(100, (currentSpend / budget) * 100) : 0;
   const color = getColor(pct);
-
   const data = [{ name: 'spend', value: pct, fill: color }];
+
+  const styles = {
+    card: {
+      backgroundColor: t.cardBg,
+      borderRadius: '12px',
+      padding: '20px',
+      border: `1px solid ${t.border}`,
+    },
+    title: {
+      fontSize: '14px',
+      fontWeight: '600',
+      color: t.textSecondary,
+      textTransform: 'uppercase',
+      letterSpacing: '0.05em',
+      marginBottom: '16px',
+    },
+    centerLabel: {
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      textAlign: 'center',
+      pointerEvents: 'none',
+    },
+    amount: {
+      fontSize: '24px',
+      fontWeight: '700',
+      color: t.textPrimary,
+    },
+    sub: {
+      fontSize: '12px',
+      color: t.textSecondary,
+    },
+    chartWrap: {
+      position: 'relative',
+      width: '100%',
+      height: '200px',
+    },
+    meta: {
+      display: 'flex',
+      justifyContent: 'space-between',
+      marginTop: '12px',
+    },
+    metaItem: {
+      textAlign: 'center',
+    },
+    metaVal: {
+      fontSize: '18px',
+      fontWeight: '700',
+      color: t.textPrimary,
+    },
+    metaLabel: {
+      fontSize: '11px',
+      color: t.textMuted,
+    },
+  };
 
   return (
     <div style={styles.card}>
@@ -96,16 +99,16 @@ function CostMeter({ currentSpend = 0, budget = 1000 }) {
               tick={false}
             />
             <RadialBar
-              background={{ fill: '#334155' }}
+              background={{ fill: t.barBg }}
               dataKey="value"
               angleAxisId={0}
               cornerRadius={8}
             />
             <Tooltip
               formatter={(val) => [`${val.toFixed(1)}%`, 'Budget used']}
-              contentStyle={{ backgroundColor: '#0f172a', border: '1px solid #334155', borderRadius: '8px' }}
-              labelStyle={{ color: '#94a3b8' }}
-              itemStyle={{ color: '#f1f5f9' }}
+              contentStyle={{ backgroundColor: t.tooltipBg, border: `1px solid ${t.border}`, borderRadius: '8px' }}
+              labelStyle={{ color: t.textSecondary }}
+              itemStyle={{ color: t.textPrimary }}
             />
           </RadialBarChart>
         </ResponsiveContainer>
